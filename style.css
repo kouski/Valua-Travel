@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* navbar */
+
+.navbar{
+    background-color: #424242;
+  }
+  
+  .navbar-nav li {
+      border-right: 2px solid white; /* Añade un borde derecho de 2px de ancho en color blanco */
+      padding-right: 10px; /* Añade relleno a la derecha del contenido */
+    }
+  
+  
+    /* Estilo para el último elemento li para quitar el borde derecho */
+    .navbar-nav li:last-child {
+      border-right: none;
+    }

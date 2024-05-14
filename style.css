@@ -1,14 +1,11 @@
 /***********
  * Variables *
  ***********/
- :root {
-    --color-navbar: #424242;
-    --color-secondary: #D93D67;
-    --font-size-body: 16px;
-  }
-  
-
-
+:root {
+  --color-navbar: #424242;
+  --color-secondary: #d93d67;
+  --font-size-body: 16px;
+}
 
 * {
   box-sizing: border-box;
@@ -18,7 +15,6 @@
 /***********
  * Navbar *
  ***********/
-
 
 .navbar {
   background-color: var(--color-navbar);
@@ -48,56 +44,112 @@ select:active {
  * Navbar *
  ***********/
 
+/***********
+ * Hero *
+ ***********/
+
+ .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0'); 
+    background-size: cover;
+    background-position: center;
+    height: 395px;
+}
+
+.hero h1, .hero h4 {
+    color: rgb(249, 245, 245);
+}
+
+.inscripcion{
+    margin-top: 140px;
+    margin-left: 60px;
+}
+
+
+/***********
+ * Hero *
+ ***********/
+
+/******************
+ * Seccion acceso *
+ ******************/
+
+.acceso {
+  background-color: #e5e5e5;
+  margin-bottom: 0;
+  margin-top: 0;
+  height: auto;
+}
+
+.acceso h2 {
+  color: black;
+}
+
+/******************
+ * Seccion acceso *
+ ******************/
+
+/******************
+ * Seccion ayuda *
+ ******************/
+
+.ayuda {
+  background-color: white;
+  height: auto;
+}
+
+/******************
+ * Seccion ayuda *
+ ******************/
 
 /***********
  * Footer *
  ***********/
+footer {
+  margin-top: 0;
+}
 
+.seccion-uno {
+  background-color: rgb(178, 52, 74);
+}
 
-.seccion-uno{
-    background-color: rgb(178, 52, 74);
-  }
-  
-  .seccion-roja{
-    color: #FFFFFF;
-    padding-top: 40px;
-  }
-  
-  #politica{
-    color: inherit; /* Esto hace que los enlaces tomen el color del texto circundante */
-  }
-  
-  i{
-    margin-right: 0.5em;
-  }
-  
-  .text-reset{
-    border-bottom: 1px solid rgb(77, 76, 76);
-    padding-bottom: 0.5em;
-    text-decoration: none;
-  }
-.seccion-dos{
-    background-color: #242323;
-    color: #FFFFFF;
-    padding-top: 40px;
-  }
-  .seccion-dos h6{
-    color: rgb(178, 52, 74);
-  }
-  
-  #suscribir{
-    background-color: rgb(178, 52, 74);
-    color: #FFFFFF;
-  }
-  
-  #copyright{
-    background: #151515;
-    color: #716e6e;
-  }
+.seccion-roja {
+  color: #ffffff;
+  padding-top: 40px;
+  margin-top: 0;
+}
 
- /***********
+#politica {
+  color: inherit; /* Esto hace que los enlaces tomen el color del texto circundante */
+}
+
+i {
+  margin-right: 0.5em;
+}
+
+.text-reset {
+  border-bottom: 1px solid rgb(77, 76, 76);
+  padding-bottom: 0.5em;
+  text-decoration: none;
+}
+.seccion-dos {
+  background-color: #242323;
+  color: #ffffff;
+  padding-top: 40px;
+}
+.seccion-dos h6 {
+  color: rgb(178, 52, 74);
+}
+
+#suscribir {
+  background-color: rgb(178, 52, 74);
+  color: #ffffff;
+}
+
+#copyright {
+  background: #151515;
+  color: #716e6e;
+}
+
+/***********
  * Footer *
  ***********/
-
-
-

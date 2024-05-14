@@ -1,12 +1,27 @@
+/***********
+ * Variables *
+ ***********/
+ :root {
+    --color-navbar: #424242;
+    --color-secondary: #D93D67;
+    --font-size-body: 16px;
+  }
+  
+
+
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-/* navbar */
+/***********
+ * Navbar *
+ ***********/
+
 
 .navbar {
-  background-color: #424242;
+  background-color: var(--color-navbar);
 }
 
 .navbar-nav li {
@@ -28,5 +43,61 @@ select:active {
   outline: none;
   border: none;
 }
+
+/***********
+ * Navbar *
+ ***********/
+
+
+/***********
+ * Footer *
+ ***********/
+
+
+.seccion-uno{
+    background-color: rgb(178, 52, 74);
+  }
+  
+  .seccion-roja{
+    color: #FFFFFF;
+    padding-top: 40px;
+  }
+  
+  #politica{
+    color: inherit; /* Esto hace que los enlaces tomen el color del texto circundante */
+  }
+  
+  i{
+    margin-right: 0.5em;
+  }
+  
+  .text-reset{
+    border-bottom: 1px solid rgb(77, 76, 76);
+    padding-bottom: 0.5em;
+    text-decoration: none;
+  }
+.seccion-dos{
+    background-color: #242323;
+    color: #FFFFFF;
+    padding-top: 40px;
+  }
+  .seccion-dos h6{
+    color: rgb(178, 52, 74);
+  }
+  
+  #suscribir{
+    background-color: rgb(178, 52, 74);
+    color: #FFFFFF;
+  }
+  
+  #copyright{
+    background: #151515;
+    color: #716e6e;
+  }
+
+ /***********
+ * Footer *
+ ***********/
+
 
 

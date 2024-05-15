@@ -233,6 +233,13 @@ footer {
   background-color: rgb(178, 52, 74);
 }
 
+.seccion-uno p{
+  font-family: var(--font-family-body);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-primario);
+}
+
 .seccion-roja {
   color: #ffffff;
   padding-top: 40px;
@@ -264,6 +271,7 @@ i {
 #suscribir {
   background-color: rgb(178, 52, 74);
   color: #ffffff;
+  padding: 0.3rem 0.6rem;
 }
 
 #copyright {

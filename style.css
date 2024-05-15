@@ -7,8 +7,8 @@
   --color-secundario: #d93d67;
   --color-titulo: #000000;
   --color-texto: #565556;
-  --font-familiy-body: 'Montserrat', sans-serif;
-  --font-familiy-title: 'Oswald', sans-serif;
+  --font-family-body: 'Montserrat', sans-serif;
+  --font-family-title: 'Oswald', sans-serif;
   --background-acceso: #e5e5e5;
 }
 
@@ -45,6 +45,13 @@ select:active {
   border: none;
 }
 
+.nav-item{
+  color: var(--color-primario);
+  font-family: var(--font-family-body);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
 /***********
  * Navbar *
  ***********/
@@ -77,7 +84,7 @@ select:active {
 }
 
 .hero h1{
-font-family: var(--font-familiy-title);
+font-family: var(--font-family-title);
 font-weight: 500;
 font-size: 5.9rem;
 letter-spacing: -0.95px;
@@ -143,25 +150,57 @@ letter-spacing: 9px;
 
 .ayuda h2{
   color: var(--color-titulo);
+  font-family: var(--font-family-body);
+  font-size: 2.125rem;
+  font-weight: 300;
+  letter-spacing: 0.34px;
   padding-top: 4.3rem;
   
+}
 
+.ayuda h2 span{
+  font-weight: 900;
 }
 
 .ayuda p{
   color: var(--color-texto);
+  font-weight: 400;
+  font-size: 1.125rem;
   padding-bottom: 1.8rem;
+  letter-spacing: -0.09px;
+  opacity: 1;
 }
 
 .btn-ayuda{
   background-color: var(--color-secundario);
   color: var(--color-primario);
+  font-family: var(--font-family-body);
+  font-weight: bold;
+  font-size: 1rem;
   padding: 0.875rem 1.75rem;
+  opacity: 1;
 
 }
 
 .card.shadow {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.ayuda .card-title{
+  color: var(--color-titulo);
+  font-family: var(--font-family-body);
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: -0.09px;
+  opacity: 1;
+}
+.ayuda .card-text{
+  color: var(--color-texto);
+  font-family: var(--font-family-body);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.08px;
+  opacity: 1;
 }
 
 

@@ -118,21 +118,35 @@ letter-spacing: 9px;
 
 .acceso {
   background-color: var(--background-acceso);
+  height: auto;
   margin-bottom: 0;
   margin-top: 0;
-  height: auto;
 }
 
 .acceso h2 {
   color: var(--color-titulo);
+  font-family: var(--font-family-body);
+  font-size: 2.125rem;
+  font-weight: 300;
+  letter-spacing: 0.34px;
   padding-top: 2.125rem;
   text-align: center;
+  
 }
 
 .acceso p{
   color: var(--color-texto);
-  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: -0.09px;
+  opacity: 1;
   padding-bottom: 4.5rem;
+  text-align: center;
+  
+}
+
+.acceso h2 span{
+  font-weight: 900;
 }
 
 /******************

@@ -3,8 +3,13 @@
  ***********/
 :root {
   --color-navbar: #424242;
-  --color-secondary: #d93d67;
-  --font-size-body: 16px;
+  --color-primario:#FFFFFF;
+  --color-secundario: #d93d67;
+  --color-titulo: #000000;
+  --color-texto: #565556;
+  --font-familiy-body: 'Montserrat', sans-serif;
+  --font-familiy-title: 'Oswald', sans-serif;
+  --background-acceso: #e5e5e5;
 }
 
 * {
@@ -49,19 +54,50 @@ select:active {
  ***********/
 
  .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0'); 
-    background-size: cover;
-    background-position: center;
-    height: 395px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0'); 
+  background-size: cover;
+  background-position: center;
+  height: 395px;
 }
 
 .hero h1, .hero h4 {
-    color: rgb(249, 245, 245);
+  color: var(--color-primario);
 }
 
 .inscripcion{
-    margin-top: 140px;
-    margin-left: 60px;
+  margin-top: 140px;
+  margin-left: 60px;
+}
+
+@media (max-width: 768px) {
+  .inscripcion {
+      margin-top: 70px;
+      margin-left: 20px;
+  }
+}
+
+.hero h1{
+font-family: var(--font-familiy-title);
+font-weight: 500;
+font-size: 5.9rem;
+letter-spacing: -0.95px;
+opacity: 1;
+}
+
+.hero h4{
+font-family: var(--font-family-body);
+font-weight: 500;
+font-size: 1.125rem;
+letter-spacing: 9px;
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+      font-size: 3.5rem;
+  }
+  .hero h4 {
+      font-size: 1rem;
+  }
 }
 
 
@@ -74,14 +110,22 @@ select:active {
  ******************/
 
 .acceso {
-  background-color: #e5e5e5;
+  background-color: var(--background-acceso);
   margin-bottom: 0;
   margin-top: 0;
   height: auto;
 }
 
 .acceso h2 {
-  color: black;
+  color: var(--color-titulo);
+  padding-top: 34px;
+  text-align: center;
+}
+
+.acceso p{
+  color: var(--color-texto);
+  text-align: center;
+  padding-bottom: 72px;
 }
 
 /******************
@@ -153,3 +197,31 @@ i {
 /***********
  * Footer *
  ***********/
+
+
+
+ /*
+Media Query para estilos específicos en dispositivos móviles
+@media only screen and (max-width: 768px) {
+  Estilos para pantallas con ancho máximo de 768px, típicamente para dispositivos móviles
+
+  Cambia el tamaño del título h1 para dispositivos móviles
+  .hero h1 {
+    font-size: 3.5rem;  Tamaño del texto 
+  }
+
+  Cambia el tamaño del subtítulo h4 para dispositivos móviles
+  .hero h4 {
+    font-size: 1rem;  Tamaño del texto 
+    letter-spacing: 5px;  Espaciado entre letras 
+    margin-top: 20px;  Margen superior 
+  }
+
+  Ajusta el margen superior y el margen izquierdo del contenedor para dispositivos móviles
+  .inscripcion {
+    margin-top: 60px;  Margen superior 
+    margin-left: 20px;  Margen izquierdo 
+  }
+}
+*/
+

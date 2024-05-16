@@ -10,6 +10,7 @@
   --font-family-body: 'Montserrat', sans-serif;
   --font-family-title: 'Oswald', sans-serif;
   --background-acceso: #e5e5e5;
+  --background-button:#383838;
 }
 
 * {
@@ -115,11 +116,10 @@ letter-spacing: 9px;
 /******************
  * Seccion acceso *
  ******************/
-
-.acceso {
+ .acceso {
   background-color: var(--background-acceso);
-  height: auto;
-  margin-bottom: 0;
+  height: 100%;
+  margin-bottom: 80px;
   margin-top: 0;
 }
 
@@ -131,7 +131,6 @@ letter-spacing: 9px;
   letter-spacing: 0.34px;
   padding-top: 2.125rem;
   text-align: center;
-  
 }
 
 .acceso p{
@@ -142,12 +141,104 @@ letter-spacing: 9px;
   opacity: 1;
   padding-bottom: 4.5rem;
   text-align: center;
-  
 }
 
 .acceso h2 span{
   font-weight: 900;
 }
+
+.accordion{
+  width: 20%;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+
+.accordion-item button{
+  font-family: var(--font-family-body);
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--color-primario);
+  
+}
+
+/* Ocultar la flecha en el botón del acordeón */
+.accordion-button::after {
+  display: none !important;
+}
+
+/* Estilo para el acordeón izquierdo */
+.accordion-button.izquierdo {
+  background-color: #D93D67; /* Reemplaza 'tuColorIzquierdo' con el color que deseas */
+  color: #FFFFFF;
+}
+
+.accordion-button.izquierdo:not(.collapsed) {
+  background-color: #D93D67; /* Reemplaza 'tuColorIzquierdo' con el color que deseas */
+  color: #FFFFFF;
+}
+
+/* Estilo para el acordeón derecho */
+.accordion-button.derecho {
+  background-color: #000000; /* Negro */
+  color: #FFFFFF;
+}
+
+.accordion-button.derecho:not(.collapsed) {
+  background-color: #000000; /* Negro */
+  color: white;
+}
+
+/* Cambiar el color de fondo del botón del acordeón cuando está abierto */
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-secundario);
+  color: #FFFFFF;
+  border: none;
+}
+
+/* Estilo para centrar el texto del cuerpo del acordeón */
+
+
+/* Estilo para el cuerpo del acordeón izquierdo */
+#collapseOne .accordion-body {
+  background-color: #D93D6750; /* Gris */
+}
+
+/* Estilo para el cuerpo del acordeón derecho */
+#collapseTwo .accordion-body {
+  background-color: #808080; /* Gris */
+}
+
+
+/* Eliminar el borde azul al enfocar el botón del acordeón */
+.accordion-button:focus {
+  box-shadow: none;
+  border: none;
+}
+
+
+/* Opcional: si también deseas eliminar el borde al expandir el acordeón */
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+
+/* Estilo para el relleno inferior de los acordeones */
+.accordion-item {
+  padding-bottom: 80px; /* Puedes ajustar el valor según tus necesidades */
+  background-color: transparent;
+  border: none;
+}
+
+
+
+
+
+
+
+  
+
+
+
 
 /******************
  * Seccion acceso *

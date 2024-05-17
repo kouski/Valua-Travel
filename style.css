@@ -63,10 +63,13 @@ select:active {
  ***********/
 
  .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0'); 
+  background:  url('images/close-up-hand-holding-travel-board.webp'); 
   background-size: cover;
-  background-position: center;
-  height: 395px;
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  height: 550px;
+  width: 100%;
+  
 }
 
 .hero h1, .hero h4 {
@@ -87,17 +90,20 @@ select:active {
 
 .hero h1{
 font-family: var(--font-family-title);
-font-weight: 500;
+font-weight: 400;
 font-size: 5.9rem;
 letter-spacing: -0.95px;
 opacity: 1;
+
 }
 
 .hero h4{
 font-family: var(--font-family-body);
 font-weight: 500;
 font-size: 1.125rem;
-letter-spacing: 9px;
+letter-spacing: 10.5px;
+padding-top: 4rem;
+
 }
 
 @media (max-width: 576px) {

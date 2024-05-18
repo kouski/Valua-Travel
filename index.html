@@ -75,8 +75,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col">
-            <h2><span>Area</span> de acceso</h2>
-            <p>Escoge una de las opciones</p>
+            <h2><span>Área</span> de acceso</h2>
+            <p>Elige una de las opciones</p>
         </div>
     </div>
 </div>
@@ -85,7 +85,7 @@
     <div class="col">
       <!-- Primer acordeón -->
       <div class="accordion-item position-relative">
-        <a href=""><i class="bi bi-info-circle-fill position-absolute top-3 end-0 m-3" style="font-size: 1.5em;top: -1em;color: #d93d67;"></i></a>
+        <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-info-circle-fill position-absolute top-3 end-0 m-3" style="font-size: 1.5em;top: -1em;color: #d93d67;"></i></a>
         <h2 class="accordion-header text-center" id="headingOne">
           <button class="accordion-button izquierdo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-bs-parent="#accordionContainer">
             <span class="mx-auto">NUEVA INSCRIPCIÓN</span>
@@ -100,6 +100,30 @@
         </div>
       </div>
     </div>
+    <!-- modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title ps-3 pe-3 pb-2" id="staticBackdropLabel"><i class="bi bi-info-circle-fill pe-2 mt-5" style="font-size: 1.2em;color: #d93d67;"></i>Código identificador del viaje</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body ps-5 pe-5 pt-4">
+              El código identificador del viaje tiene <b>5 caracteres</b> te lo proporcionará el responsable organizador del viaje.
+          </div>
+          <div class="alerta pt-4">
+            <h5 class="ps-5 pe-5">Alerta</h5>
+            <p class="ps-5 pe-5">Ten en cuenta la diferencia entre el <b>número cero</b> y la <b>letra “O”</b> de tu código identificador del viaje.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- modal -->
+
+
     <div class="col">
       <!-- Segundo acordeón -->
       <div class="accordion-item position-relative">

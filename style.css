@@ -9,8 +9,10 @@
   --color-texto: #565556;
   --font-family-body: 'Montserrat', sans-serif;
   --font-family-title: 'Oswald', sans-serif;
-  --background-acceso: #e5e5e5;
+  --background-acceso: #E5E5E5;
   --background-button:#383838;
+  --background-footer:#202020;
+  --background-alerta:#F7ECDF;
 }
 
 * {
@@ -271,22 +273,66 @@ input:focus {
 } */
 
 
+/******************
+ * Seccion acceso *
+ ******************/
 
 
+/******************
+ * Modal *
+ ******************/
 
+.modal-header h5{
+  color: var(--color-texto);
+  font-family: var(--font-family-body);
+  font-size: 1.875rem;
+  font-weight: 700;
+}
 
-
-
-
-
-
+.alerta{
+  background-color: var(--background-alerta);
   
+}
+
+.modal-body{
+  margin-bottom: 1.8em;
+  margin-top: 1.4em;
+}
+
+.modal-body, .alerta p{
+  color: var(--color-titulo);
+  font-family: var(--font-family-body);
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.alerta h5{
+  color: var(--color-secundario);
+  font-family: var(--font-family-body);
+  font-size: 1.75rem;
+  font-weight: bold;
+  letter-spacing: -0.14px;
+}
+
+.alerta p{
+  margin-bottom: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.modal-header .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+
+
 
 
 
 
 /******************
- * Seccion acceso *
+ * Modal *
  ******************/
 
 /******************
@@ -396,12 +442,12 @@ i {
   text-decoration: none;
 }
 .seccion-dos {
-  background-color: #242323;
+  background-color: var(--background-footer);
   color: #ffffff;
   padding-top: 40px;
 }
 .seccion-dos h6 {
-  color: rgb(178, 52, 74);
+  color: var(--color-secundario);
 }
 
 #suscribir {
@@ -411,8 +457,8 @@ i {
 }
 
 #copyright {
-  background: #151515;
-  color: #716e6e;
+  background: var(--color-titulo);
+  color: #C1C1C1;
 }
 
 

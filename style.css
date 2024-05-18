@@ -233,7 +233,7 @@ padding-top: 4rem;
 
 /* Estilo para el relleno inferior de los acordeones */
 .accordion-item {
-  padding-bottom: 80px; /* Puedes ajustar el valor según tus necesidades */
+  padding-bottom: 40px; /* Puedes ajustar el valor según tus necesidades */
   background-color: transparent;
   border: none;
 }
@@ -265,6 +265,16 @@ padding-top: 4rem;
 input:focus {
   outline-color: grey; /* Cambia el color de fondo al hacer focus */
 }
+
+.alert{
+  color: var(--color-texto);
+  font-family: var(--font-family-body);
+  font-size: 1rem;
+  letter-spacing: -0.08px;
+  background-color: #F7ECDF;
+}
+
+
 
 
 /* Estilo para quitar el borde exterior del campo de entrada de la contraseña */
@@ -319,6 +329,7 @@ input:focus {
   padding-bottom: 20px !important;
 }
 
+/* colocar x en esquina superior derecha */
 .modal-header .btn-close {
     position: absolute;
     top: 10px;

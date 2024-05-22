@@ -1,0 +1,823 @@
+/***********
+ * Variables *
+ ***********/
+ :root {
+    --color-navbar: #424242;
+    --color-primario:#FFFFFF;
+    --color-secundario: #d93d67;
+    --color-titulo: #000000;
+    --color-texto: #565556;
+    --font-family-body: 'Montserrat', sans-serif;
+    --font-family-title: 'Oswald', sans-serif;
+    --background-acceso: #E5E5E5;
+    --background-button:#383838;
+    --background-footer:#202020;
+    --background-inscripcion:#EBEBEB;
+    --background-pasajero:#F6ECDF;
+    --background-progreso:#F7ECDF;
+    --background-back-button:#818181;
+    
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /***********
+   * Globales *
+   ***********/
+
+   
+
+  /***********
+   * Globales *
+   ***********/
+
+
+
+
+  /***********
+   * Navbar *
+   ***********/
+  
+  .navbar {
+    background-color: var(--color-navbar);
+  }
+  
+  .navbar-nav li {
+    border-right: 2px solid white; /* Añade un borde derecho de 2px de ancho en color blanco */
+    padding-right: 10px; /* Añade relleno a la derecha del contenido */
+  }
+  
+  /* Estilo para el último elemento li para quitar el borde derecho */
+  .navbar-nav li:last-child {
+    border-right: none;
+  }
+  
+  .custom-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255,255,255,.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  select:focus,
+  select:active {
+    outline: none;
+    border: none;
+  }
+  
+  .nav-item{
+    color: var(--color-primario);
+    font-family: var(--font-family-body);
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  
+  
+  /***********
+   * Navbar *
+   ***********/
+
+
+  /***********
+   * Barra progreso *
+   ***********/
+
+   .progreso{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: var(--background-progreso);
+   }
+
+   .progreso .bienvenida h2{
+    color: var(--color-texto);
+    font-family: var(--font-family-title);
+    font-size: 2.75rem;
+    font-weight: 400;
+    padding-left: 3rem;
+    letter-spacing: 0.44px;
+    text-align: center;
+   }
+   .progreso .bienvenida p{
+    color: var(--color-texto);
+    font-family: var(--font-family-body);
+    font-size: 0.563rem;
+    font-weight: 500;
+    letter-spacing: 4.5px;
+    text-align: center;
+    margin-bottom: 0;
+   }
+
+
+.progress-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.progress {
+    height: 8px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--color-secundario);
+    transition: width 0.4s ease;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-primario);
+    border: 2px solid var(--color-secundario);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.step.completed {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .progress-container {
+        max-width: 100%;
+    }
+    .steps {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .step {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .text-center h2, .text-center h1 {
+        text-align: center;
+    }
+}
+
+
+
+
+  /***********
+   * Barra progreso *
+   ***********/
+
+
+  /***********
+   * Titulo *
+   ***********/
+  .titulo{
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .titulo h2 span{
+    color: var(--color-secundario);
+    font-family: var(--font-family-body);
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.32px;
+  }
+  .titulo h2{
+    color: var(--color-titulo);
+    font-family: var(--font-family-body);
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.32px;
+  }
+
+  /***********
+   * Titulo *
+   ***********/
+
+
+  /***********
+   * Tu viaje *
+   ***********/
+
+
+
+.viaje{
+  background-color: var(--background-inscripcion);
+  margin-bottom: auto;
+  padding-bottom: 60px;
+  padding-top: 100px;
+}
+
+
+.margen-itinerario, .margen-cliente{
+  margin-right: 8rem;
+}
+
+.container-viaje {
+  position: relative;
+  border-radius: 0 10px 10px 10px;
+  padding-top: 60px; /* Espacio para la pestaña */
+  background-color: var(--color-secundario);
+}
+
+.tab-header {
+  position: absolute;
+  top: -40px; /* Ajusta según el tamaño de la pestaña */
+  left: 0;
+  background-color: var(--color-secundario);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: 25%;
+  padding-top: 2em;
+}
+
+@media (max-width: 1024px) {
+  /* Estilos para tablets */
+  .tab-header {
+    width: 40%; /* Ajusta el ancho según sea necesario */
+    top: -30px; /* Ajusta la posición según sea necesario */
+    padding: 8px 16px; /* Ajusta el padding según sea necesario */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Estilos para móviles */
+  .tab-header {
+    width: 50%; /* Ajusta el ancho según sea necesario */
+    top: -20px; /* Ajusta la posición según sea necesario */
+    padding: 6px 12px; /* Ajusta el padding según sea necesario */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Estilos para móviles más pequeños */
+  .tab-header {
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    top: -10px; /* Ajusta la posición según sea necesario */
+    padding: 4px 8px; /* Ajusta el padding según sea necesario */
+  }
+}
+
+
+
+.tab-header h1 {
+  color: var(--color-primario);
+  font-family: var(--font-family-body);
+  font-size: 1.75rem;
+  font-weight: bold;
+  letter-spacing: 0.28px;
+  margin: 0;
+}
+
+.tab-header i {
+  color: var(--color-primario);
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content label{
+  color: var(--color-primario);
+  font-family: var(--font-family-body);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.09px;
+}
+
+
+.toast-info{
+  position: absolute;
+}
+  /***********
+   * Tu viaje *
+   ***********/
+
+
+  /***********
+   * Pasajero *
+   ***********/
+   .form-check-input:checked {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+}
+.form-check-input:focus {
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 0 0.25rem rgba(217, 83, 79, 0.25);
+}
+.custom-radio-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.form-section {
+    padding: 20px;
+}
+.form-label {
+    font-weight: bold;
+}
+
+.personales{
+  background-color: var(--background-pasajero);
+}
+
+.pasajero{
+  background-color: var(--background-pasajero);
+}
+
+.pasajero h1{
+  color: var(--color-titulo);
+  font-family: var(--font-family-body);
+  font-size: 1.75rem;
+  letter-spacing: 0.28px;
+}
+
+.pasajero h2{
+  color: var(--color-secundario);
+  font-family: var(--font-family-body);
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.25px;
+  margin-left: 1.7em;
+}
+
+.pasajero i{
+  color: var(--color-titulo);
+}
+
+.fondo-pasajero{
+  background-color: var(--color-primario);
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container h2 {
+  width: 90%;
+  background-color: var(--background-pasajero); /* Cambia esto al color de fondo que prefieras */
+}
+
+
+
+/* botones atrás-siguiente */
+
+.btn-back {
+  background-color: var(--background-back-button);
+  color: white;
+  border-right: 2px solid white;
+}
+.btn-next {
+  background-color: var(--color-secundario);
+  color: white;
+}
+
+
+
+
+.custom-btn-height {
+  height: 80px; /* Ajusta esta altura según tus necesidades */
+  border-radius: 0;
+}
+
+.btn-back, .btn-next {
+  margin: 0; /* Asegúrate de que no haya márgenes entre los botones */
+  font-family: var(--font-family-body);
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--color-primario);
+}
+
+.col-6 {
+  padding: 0; /* Elimina cualquier padding del contenedor */
+}
+
+.row.no-gutters {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* datos personales */
+
+/* Estilo base */
+.custom-radio-group .form-check-inline {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Añade margen derecho para espaciado entre los radios */
+}
+
+.form-check-label {
+  margin-left: 5px; /* Espacio entre el radio y el texto */
+}
+
+/* Media Queries para dispositivos móviles y tablets */
+@media (max-width: 768px) {
+  .custom-radio-group .form-check-inline {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form-section .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+  /***********
+   * Pasajero *
+   ***********/
+
+  
+  /******************
+   * Seccion acceso *
+   ******************/
+   .acceso {
+    background-color: var(--color-primario);
+    height: 100%;
+    margin-bottom: 80px;
+    margin-top: 0;
+  }
+  
+  .acceso h2 {
+    color: var(--color-titulo);
+    font-family: var(--font-family-body);
+    font-size: 2.125rem;
+    font-weight: 300;
+    letter-spacing: 0.34px;
+    padding-top: 2.125rem;
+    text-align: center;
+  }
+  
+  .acceso p{
+    color: var(--color-texto);
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: -0.09px;
+    opacity: 1;
+    padding-bottom: 4.5rem;
+    text-align: center;
+  }
+  
+  .acceso h2 span{
+    font-weight: 900;
+  }
+  
+  .accordion{
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+  
+  
+  .accordion-item button{
+    font-family: var(--font-family-body);
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--color-primario);
+    
+  }
+  
+  /* Ocultar la flecha en el botón del acordeón */
+  .accordion-button::after {
+    display: none !important;
+  }
+  
+  /* Estilo para el acordeón izquierdo */
+  .accordion-button.izquierdo {
+    background-color: #D93D67; /* Reemplaza 'tuColorIzquierdo' con el color que deseas */
+    color: #FFFFFF;
+  }
+  
+  .accordion-button.izquierdo:not(.collapsed) {
+    background-color: #D93D67; /* Reemplaza 'tuColorIzquierdo' con el color que deseas */
+    color: #FFFFFF;
+  }
+  
+  /* Estilo para el acordeón derecho */
+  .accordion-button.derecho {
+    background-color: #000000; /* Negro */
+    color: #FFFFFF;
+  }
+  
+  .accordion-button.derecho:not(.collapsed) {
+    background-color: #000000; /* Negro */
+    color: white;
+  }
+  
+  /* Cambiar el color de fondo del botón del acordeón cuando está abierto */
+  .accordion-button:not(.collapsed) {
+    background-color: var(--color-secundario);
+    color: #FFFFFF;
+    border: none;
+  }
+  
+  /* Estilo para centrar el texto del cuerpo del acordeón */
+  
+  
+  /* Estilo para el cuerpo del acordeón izquierdo */
+  #collapseOne .accordion-body {
+    background-color: #D93D6750; /* Gris */
+  }
+  
+  /* Estilo para el cuerpo del acordeón derecho */
+  #collapseTwo .accordion-body {
+    background-color: #808080; /* Gris */
+  }
+  
+  
+  /* Eliminar el borde azul al enfocar el botón del acordeón */
+  .accordion-button:focus {
+    box-shadow: none;
+    border: none;
+  }
+  
+  
+  /* Opcional: si también deseas eliminar el borde al expandir el acordeón */
+  .accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+  }
+  
+  /* Estilo para el relleno inferior de los acordeones */
+  .accordion-item {
+    padding-bottom: 80px; /* Puedes ajustar el valor según tus necesidades */
+    background-color: transparent;
+    border: none;
+  }
+  
+  .accordion-body p{
+    font-family: var(--font-family-body);
+    font-size: 1.125rem;
+    color: var(--color-texto);
+    letter-spacing: -0.09px;
+    padding-bottom: 0.5em;
+  }
+  
+  #siguiente_password1,#siguiente_password2 {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border: none;
+    font-family: var(--font-family-body);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 0.8rem;
+    padding: 0.6rem 1.2rem;
+  }
+  
+  /* Estilo para quitar el borde del campo de entrada de la contraseña */
+  #password1,#password2 {
+    border: none;
+  }
+  
+  input:focus {
+    outline-color: grey; /* Cambia el color de fondo al hacer focus */
+  }
+  
+  
+  /* Estilo para quitar el borde exterior del campo de entrada de la contraseña */
+  /* #password1:focus {
+    outline: none;
+  } */
+  
+
+  /* CSS para cambiar el color de fondo del día seleccionado a rosa */
+  .flatpickr-calendar .flatpickr-day.selected {
+    background: #D93D67!important;
+    color: white;
+    border: #D93D67;
+}
+
+.calendario{
+    padding-left: 1em;
+}
+
+@media (min-width: 576px) {
+    .calendario{
+        padding-left: 10em;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .calendario{
+      padding-left: 2em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .calendario{
+      padding-left: 10em;
+  }
+}
+
+/* necesidades especiales */
+
+.form-check-inline {
+  margin-right: 30px;
+}
+.extra-row {
+  margin-bottom: 5px;
+}
+
+#extraRows {
+  width: 100%;
+  display: block; /* O 'none' si necesitas ocultarlo inicialmente */
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.input-height{
+  height: 8em;
+}
+
+  
+  
+  /******************
+   * Seccion acceso *
+   ******************/
+  
+  /******************
+   * Seccion ayuda *
+   ******************/
+  
+  .ayuda {
+    background-color: white;
+    height: auto;
+  }
+  
+  .ayuda h2{
+    color: var(--color-titulo);
+    font-family: var(--font-family-body);
+    font-size: 2.125rem;
+    font-weight: 300;
+    letter-spacing: 0.34px;
+    padding-top: 4.3rem;
+    
+  }
+  
+  .ayuda h2 span{
+    font-weight: 900;
+  }
+  
+  .ayuda p{
+    color: var(--color-texto);
+    font-weight: 400;
+    font-size: 1.125rem;
+    padding-bottom: 1.8rem;
+    letter-spacing: -0.09px;
+    opacity: 1;
+  }
+  
+  .btn-ayuda{
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    font-family: var(--font-family-body);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.875rem 1.75rem;
+    opacity: 1;
+  
+  }
+  
+  .card.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  .ayuda .card-title{
+    color: var(--color-titulo);
+    font-family: var(--font-family-body);
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: -0.09px;
+    opacity: 1;
+  }
+  .ayuda .card-text{
+    color: var(--color-texto);
+    font-family: var(--font-family-body);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.08px;
+    opacity: 1;
+  }
+  
+  
+  /******************
+   * Seccion ayuda *
+   ******************/
+  
+  /***********
+   * Footer *
+   ***********/
+  footer {
+    margin-top: 0;
+  }
+  
+  .seccion-uno {
+    background-color: rgb(178, 52, 74);
+  }
+  
+  .seccion-uno p{
+    font-family: var(--font-family-body);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-primario);
+  }
+  
+  .seccion-roja {
+    color: #ffffff;
+    padding-top: 40px;
+    margin-top: 0;
+  }
+  
+  .politica {
+    color: inherit; /* Esto hace que los enlaces tomen el color del texto circundante */
+  }
+  .politica:hover {
+    color: var(--color-secundario); /* Esto hace que los enlaces tomen el color del texto circundante */
+  }
+  
+  
+  i {
+    margin-right: 0.5em;
+  }
+  
+  .text-reset {
+    border-bottom: 1px solid rgb(77, 76, 76);
+    padding-bottom: 0.5em;
+    text-decoration: none;
+  }
+  .seccion-dos {
+    background-color: var(--background-footer);
+    color: #ffffff;
+    padding-top: 40px;
+  }
+  .seccion-dos h6 {
+    color: var(--color-secundario);
+  }
+  
+  
+  
+  #copyright {
+    background: var(--color-titulo);
+    color: #C1C1C1;
+  }
+  
+  
+  
+  /***********
+   * Footer *
+   ***********/
+  
+  
+  
+   /*
+  Media Query para estilos específicos en dispositivos móviles
+  @media only screen and (max-width: 768px) {
+    Estilos para pantallas con ancho máximo de 768px, típicamente para dispositivos móviles
+  
+    Cambia el tamaño del título h1 para dispositivos móviles
+    .hero h1 {
+      font-size: 3.5rem;  Tamaño del texto 
+    }
+  
+    Cambia el tamaño del subtítulo h4 para dispositivos móviles
+    .hero h4 {
+      font-size: 1rem;  Tamaño del texto 
+      letter-spacing: 5px;  Espaciado entre letras 
+      margin-top: 20px;  Margen superior 
+    }
+  
+    Ajusta el margen superior y el margen izquierdo del contenedor para dispositivos móviles
+    .inscripcion {
+      margin-top: 60px;  Margen superior 
+      margin-left: 20px;  Margen izquierdo 
+    }
+  }
+  */
+  
+  

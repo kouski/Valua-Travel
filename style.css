@@ -1,4 +1,5 @@
-/***********
+/*
+**********
  * Variables *
  ***********/
 :root {
@@ -46,6 +47,10 @@ select:focus,
 select:active {
   outline: none;
   border: none;
+}
+
+#languageSelect:focus{
+  border-color: red ;
 }
 
 .nav-item{
@@ -472,7 +477,59 @@ i {
   color: #C1C1C1;
 }
 
+footer {
+  margin-top: 0;
+}
 
+.seccion-uno {
+  background-color: rgb(178, 52, 74);
+}
+
+.seccion-uno p{
+  font-family: var(--font-family-body);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-primario);
+}
+
+.seccion-roja {
+  color: #ffffff;
+  padding-top: 40px;
+  margin-top: 0;
+}
+
+.politica {
+  color: inherit; /* Esto hace que los enlaces tomen el color del texto circundante */
+}
+.politica:hover {
+  color: var(--color-secundario); /* Esto hace que los enlaces tomen el color del texto circundante */
+}
+
+
+i {
+  margin-right: 0.5em;
+}
+
+.text-reset {
+  border-bottom: 1px solid rgb(77, 76, 76);
+  padding-bottom: 0.5em;
+  text-decoration: none;
+}
+.seccion-dos {
+  background-color: var(--background-footer);
+  color: #ffffff;
+  padding-top: 40px;
+}
+.seccion-dos h6 {
+  color: var(--color-secundario);
+}
+
+
+
+#copyright {
+  background: var(--color-titulo);
+  color: #C1C1C1;
+}
 
 /***********
  * Footer *

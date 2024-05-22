@@ -389,7 +389,7 @@ input:focus {
   font-family: var(--font-family-body);
   font-weight: bold;
   font-size: 1rem;
-  padding: 0.875rem 1.75rem;
+  padding: 0.4rem 2.5rem;
   opacity: 1;
 
 }
@@ -420,6 +420,8 @@ input:focus {
  * Seccion ayuda *
  ******************/
 
+
+
 /***********
  * Footer *
  ***********/
@@ -427,25 +429,10 @@ footer {
   margin-top: 0;
 }
 
-.seccion-uno {
-  background-color: rgb(178, 52, 74);
-}
-
-.seccion-uno p{
-  font-family: var(--font-family-body);
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--color-primario);
-}
-
 .seccion-roja {
   color: #ffffff;
   padding-top: 40px;
   margin-top: 0;
-}
-
-#politica {
-  color: inherit; /* Esto hace que los enlaces tomen el color del texto circundante */
 }
 
 i {
@@ -459,43 +446,11 @@ i {
 }
 .seccion-dos {
   background-color: var(--background-footer);
-  color: #ffffff;
+  color: var(--color-primario);
   padding-top: 40px;
 }
 .seccion-dos h6 {
   color: var(--color-secundario);
-}
-
-#suscribir {
-  background-color: rgb(178, 52, 74);
-  color: #ffffff;
-  padding: 0.3rem 0.6rem;
-}
-
-#copyright {
-  background: var(--color-titulo);
-  color: #C1C1C1;
-}
-
-footer {
-  margin-top: 0;
-}
-
-.seccion-uno {
-  background-color: rgb(178, 52, 74);
-}
-
-.seccion-uno p{
-  font-family: var(--font-family-body);
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--color-primario);
-}
-
-.seccion-roja {
-  color: #ffffff;
-  padding-top: 40px;
-  margin-top: 0;
 }
 
 .politica {
@@ -505,27 +460,6 @@ footer {
   color: var(--color-secundario); /* Esto hace que los enlaces tomen el color del texto circundante */
 }
 
-
-i {
-  margin-right: 0.5em;
-}
-
-.text-reset {
-  border-bottom: 1px solid rgb(77, 76, 76);
-  padding-bottom: 0.5em;
-  text-decoration: none;
-}
-.seccion-dos {
-  background-color: var(--background-footer);
-  color: #ffffff;
-  padding-top: 40px;
-}
-.seccion-dos h6 {
-  color: var(--color-secundario);
-}
-
-
-
 #copyright {
   background: var(--color-titulo);
   color: #C1C1C1;
@@ -537,28 +471,5 @@ i {
 
 
 
- /*
-Media Query para estilos específicos en dispositivos móviles
-@media only screen and (max-width: 768px) {
-  Estilos para pantallas con ancho máximo de 768px, típicamente para dispositivos móviles
-
-  Cambia el tamaño del título h1 para dispositivos móviles
-  .hero h1 {
-    font-size: 3.5rem;  Tamaño del texto 
-  }
-
-  Cambia el tamaño del subtítulo h4 para dispositivos móviles
-  .hero h4 {
-    font-size: 1rem;  Tamaño del texto 
-    letter-spacing: 5px;  Espaciado entre letras 
-    margin-top: 20px;  Margen superior 
-  }
-
-  Ajusta el margen superior y el margen izquierdo del contenedor para dispositivos móviles
-  .inscripcion {
-    margin-top: 60px;  Margen superior 
-    margin-left: 20px;  Margen izquierdo 
-  }
-}
-*/
+ 
 

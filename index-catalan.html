@@ -1,281 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalan</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valua Travel catalán</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Navbar -->
-    <header >
-        <nav class="navbar navbar-expand-md fixed-top">
-          <div class="container">
-            <a class="navbar-brand" href="#" style="font-size: 0.9rem;">
-              <img
-                src="images/VALUA_Travel_horiz_white.png"
-                alt="Logo"
-                width="270"
-                height="57"
-                class="d-inline-block align-text-center"
-              />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon custom-toggler-icon" style="font-size: 0.75rem;"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="#"></a>
-                </li>
-                
-                <li class="nav-item ms-3">
-                  <a class="nav-link text-white" href="#servicios">CONTACTA</a>
-                </li>
-                <li class="nav-item ms-3 pb-2">
-                  <a class="nav-link text-white" href="#empresa"><i class="bi bi-file-lock2-fill me-2" style="font-size: 1rem;"></i>ÁREA CLIENT</a>
-                </li>
-                <li class="nav-item ms-3">
-                  <select class="form-select w-auto me-auto" aria-label="Default select example" id="languageSelect">
-                      <option value="index-catalan.html" selected>Catalán</option>
-                      <option value="index-castellano.html" >Castellano</option>
-                    </select>
-                </li>
-                
-              </ul>
-              
-            </div>
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#" style="font-size: 0.9rem">
+            <img
+              src="images/VALUA_Travel_horiz_white.png"
+              alt="Logo"
+              width="270"
+              height="57"
+              class="d-inline-block align-text-center"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span
+              class="navbar-toggler-icon custom-toggler-icon"
+              style="font-size: 0.75rem"
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"></a>
+              </li>
+
+              <li class="nav-item ms-3">
+                <a class="nav-link text-white" href="#servicios">CONTACTA</a>
+              </li>
+              <li class="nav-item ms-3 pb-2">
+                <a class="nav-link text-white" href="#empresa"
+                  ><i
+                    class="bi bi-file-lock2-fill me-2"
+                    style="font-size: 1rem"
+                  ></i
+                  >ÁREA CLIENT</a
+                >
+              </li>
+              <li class="nav-item ms-3">
+                <select
+                  class="form-select w-auto me-auto"
+                  aria-label="Default select example"
+                  id="languageSelect"
+                >
+                  <option value="index-catalan.html" selected>Catalán</option>
+                  <option value="index-castellano.html">Castellano</option>
+                </select>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
-      <!-- Navbar -->
-
-      <!-- Hero -->
-      <section class="hero">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-6 inscripcion pt-5">
-                    <h4>BENVINGUTS/DES A LA ZONA</h4>
-                    <h1>D’INSCRIPCIONS</h1>
-                </div>
-            </div>
         </div>
+      </nav>
+    </header>
+    <!-- Navbar -->
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6 inscripcion pt-5">
+            <h4>BENVINGUTS/DES A LA ZONA</h4>
+            <h1>D’INSCRIPCIONS</h1>
+          </div>
+        </div>
+      </div>
     </section>
-    
 
-      <!-- Hero -->
+    <!-- Hero -->
 
-<!-- Seccion de acceso -->
-<section class="acceso">
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
+    <!-- Seccion de acceso -->
+    <section class="acceso">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
             <h2><span>Área</span> d’accés</h2>
             <p>Escull una de les de les des opciones</p>
-        </div>
-    </div>
-</div>
-<div id="accordionContainer" class="container">
-  <div class="row">
-    <div class="col">
-      <!-- Primer acordeón -->
-      <div class="accordion-item position-relative">
-        <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-info-circle-fill position-absolute top-3 end-0 m-3" style="font-size: 1.5em;top: -1em;color: #d93d67;"></i></a>
-        <h2 class="accordion-header text-center" id="headingOne">
-          <button class="accordion-button izquierdo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-bs-parent="#accordionContainer">
-            <span class="mx-auto">NOVA INSCRIPCIÓ</span>
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionContainer">
-          <div class="accordion-body text-center">
-            <p class="mt-2 mb-1">Codi identificador del viatge</p>
-            <input type="password" name="" id="password1" placeholder="*****" class="p-2 mb-0">
-            <button id="siguiente_password1" class="mb-0">SEGUENT</button>
           </div>
         </div>
       </div>
-      <!-- Alerta -->
-      <div class="alert d-none mt-1" role="alert" id="alertaOculta">
-        <b>El Codi indicat no correspon a cap dels nostres viatges,</b> revisa que el codi sigui correcte o posa’t en contacte amb el teu organitzador del viatge
-      </div>
-      <div class="alert d-none mt-1" role="alert" id="alertaOculta">
-        <b>El código indicado es válido, pero el período para inscribirse se ha cerrado.</b> Contacta con el organizador de tu viaje.
-      </div>
-    </div>
-    
-    <!-- modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title ps-3 pe-3 pb-2" id="staticBackdropLabel"><i class="bi bi-info-circle-fill pe-2 mt-5" style="font-size: 1.2em;color: #d93d67;"></i>Codi identificador del viatge</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div id="accordionContainer" class="container">
+        <div class="row">
+          <div class="col">
+            <!-- Primer acordeón -->
+            <div class="accordion-item position-relative">
+              <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                ><i
+                  class="bi bi-info-circle-fill position-absolute top-3 end-0 m-3"
+                  style="font-size: 1.5em; top: -1em; color: #d93d67"
+                ></i
+              ></a>
+              <h2 class="accordion-header text-center" id="headingOne">
+                <button
+                  class="accordion-button izquierdo"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                  data-bs-parent="#accordionContainer"
+                >
+                  <span class="mx-auto">NOVA INSCRIPCIÓ</span>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionContainer"
+              >
+                <div class="accordion-body text-center">
+                  <p class="mt-2 mb-2">Codi identificador del viatge</p>
+                  <input
+                    type="password"
+                    name=""
+                    id="password1"
+                    placeholder="*****"
+                    class="p-2 mb-2"
+                  />
+                  <button id="siguiente_password1" class="mt-3 mb-2">SEGUENT</button>
+                </div>
+              </div>
+            </div>
+            <!-- Alerta -->
+            <div class="alert d-none mt-1" role="alert" id="alertaOculta">
+              <b>El Codi indicat no correspon a cap dels nostres viatges,</b>
+              revisa que el codi sigui correcte o posa’t en contacte amb el teu
+              organitzador del viatge
+            </div>
+            <div class="alert d-none mt-1" role="alert" id="alertaOculta">
+              <b
+                >El código indicado es válido, pero el período para inscribirse
+                se ha cerrado.</b
+              >
+              Contacta con el organizador de tu viaje.
+            </div>
           </div>
-          <div class="modal-body ps-5 pe-5 pt-4">
-            El codi identificador del viatge <b>(5 caràcters)</b> te’l proporcionarà el responsable organitzador del viatge.
-          </div>
-          <div class="alerta pt-4">
-            <h5 class="ps-5 pe-5">Alerta</h5>
-            <p class="ps-5 pe-5">Tingues en compte la diferència entre el número <b>zero I la lletra “O”</b> del teu codi identificador del viatge.</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-
-
-    <!-- modal -->
-
-
-    <div class="col">
-      <!-- Segundo acordeón -->
-      <div class="accordion-item position-relative">
-        <a href=""><i class="bi bi-info-circle-fill position-absolute top-3 end-0 m-3" style="font-size: 1.5em;top: -1em;color: #000000;"></i></a>
-        <h2 class="accordion-header text-center" id="headingTwo">
-          <button class="accordion-button derecho" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-bs-parent="#accordionContainer">
-            <span class="mx-auto">MODIFICAR DADES DE LA INSCRIPCIÓ</span>
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionContainer">
-          <div class="accordion-body text-center">
-              <p class="mt-2 mb-2">Codi identificador del viatge</p>
-              <input type="password" name="" id="password2" placeholder="*****" class="p-2 mb-2">
-              <button id="siguiente_password2" class="mb-2">SEGUENT</button>
-          </div>
-      </div>
-      
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<!-- Seccion de acceso -->
-
-
-<!-- Seccion de ayuda -->
-<section class="ayuda">
-  <div class="container-fluid">
-      <div class="row justify-content-center">
-          <div class="col-12 text-center">
-              <h2><span>¿Necessites</span> ajuda?</h2>
-              <p>T'ho posem fàcil</p>
-          </div>
-      </div>
-      <div class="row justify-content-around mb-5">
-          <div class="col-12 col-sm-6 col-md-6 mb-3 d-flex align-items-stretch">
-            <div class="card mx-auto shadow" style="width: 28rem;">
-              <div class="card-body text-center">
-                <p class="card-text">¿Tens cap problema? <br>Envia'ns una captura de pantalla aquí.</p>
-                <a href="#" class="btn btn-ayuda"><i class="bi bi-envelope-fill mx-auto pe-2" style="font-size: 1rem;"></i>ENVIAR</a>
+          <!-- modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title ps-3 pe-3 pb-2"
+                    id="staticBackdropLabel"
+                  >
+                    <i
+                      class="bi bi-info-circle-fill pe-2 mt-5"
+                      style="font-size: 1.2em; color: #d93d67"
+                    ></i
+                    >Codi identificador del viatge
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body ps-5 pe-5 pt-4">
+                  El codi identificador del viatge <b>(5 caràcters)</b> te’l
+                  proporcionarà el responsable organitzador del viatge.
+                </div>
+                <div class="alerta pt-4">
+                  <h5 class="ps-5 pe-5">Alerta</h5>
+                  <p class="ps-5 pe-5">
+                    Tingues en compte la diferència entre el número
+                    <b>zero I la lletra “O”</b> del teu codi identificador del
+                    viatge.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          
-        
-      </div>
-  </div>
-  </section>
-  
 
-<!-- Seccion de ayuda -->
+          <!-- modal -->
 
-
-
-
-      <!-- Footer -->
-<footer class="text-center text-lg-start text-muted">
-    
-  
-  <!-- Section: Links  -->
-  
-  <section class="seccion-dos">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mb-4">
-          <!-- Content -->
-          
-          <div>
-            <img  src="images/logo_footer.png" alt="logo Valua Travel">
+          <div class="col">
+            <!-- Segundo acordeón -->
+            <div class="accordion-item position-relative">
+              <a href=""
+                ><i
+                  class="bi bi-info-circle-fill position-absolute top-3 end-0 m-3"
+                  style="font-size: 1.5em; top: -1em; color: #000000"
+                ></i
+              ></a>
+              <h2 class="accordion-header text-center" id="headingTwo">
+                <button
+                  class="accordion-button derecho"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                  data-bs-parent="#accordionContainer"
+                >
+                  <span class="mx-auto">MODIFICAR DADES DE LA INSCRIPCIÓ</span>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionContainer"
+              >
+                <div class="accordion-body text-center">
+                  <p class="mt-2 mb-2">Codi identificador del viatge</p>
+                  <input
+                    type="password"
+                    name=""
+                    id="password2"
+                    placeholder="*****"
+                    class="p-2 mb-2"
+                  />
+                  <button id="siguiente_password2" class="mt-3 mb-2">SEGUENT</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="ms-3">
-            Professionals a l'organització de viatges en grups, estades lingüístiques i serveis turístics. 
-            Valua us ofereix un servei innovador, rigorós i de proximitat.
-          </p>
-          <div class="ms-3">
-            <img src="images/logos quality.png" alt="logo quality">
-          </div>
-        
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Què necessites?
-          </h6>
-          <p>
-            <a href="#!" class="text-reset valua">VALUA TRAVEL</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">VALUA LANGUAGES</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">VALUA GROUPS</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">VALUA ATTITUD</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">VALUA SERVICE</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">POLÍTICA DE PRIVACITAT</h6>
-          <p><a href="" class="politica">Avís legal</a></p>
-          <p><a href="" class="politica">Política de Privacitat</a></p>
-          <p><a href="" class="politica">Política de Cookies</a></p>
-          <p><a href="" class="politica">Reclamació Gencat</a></p>
-          
-        </div>
-        <!-- Grid column -->
-
-        
-        <!-- Grid column -->
       </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
+    </section>
+    <!-- Seccion de acceso -->
 
-  <!-- Copyright -->
-  <div id="copyright" class="text-center p-4">
-    © 2024 Copyright Valua Travel, All Rights Reserved
-    
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+    <!-- Seccion de ayuda -->
+    <section class="ayuda">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2><span>¿Necessites</span> ajuda?</h2>
+            <p>T'ho posem fàcil</p>
+          </div>
+        </div>
+        <div class="row justify-content-around mb-5">
+          <div class="col-12 col-sm-6 col-md-6 mb-3 d-flex align-items-stretch">
+            <div class="card mx-auto shadow" style="width: 28rem">
+              <div class="card-body text-center">
+                <p class="card-text">
+                  ¿Tens cap problema? <br />Envia'ns una captura de pantalla
+                  aquí.
+                </p>
+                <a href="#" class="btn btn-ayuda"
+                  ><i
+                    class="bi bi-envelope-fill mx-auto pe-2"
+                    style="font-size: 1rem"
+                  ></i
+                  >ENVIAR</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Seccion de ayuda -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted">
+      <!-- Section: Links  -->
+
+      <section class="seccion-dos">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mb-4">
+              <!-- Content -->
+
+              <div>
+                <img src="images/logo_footer.png" alt="logo Valua Travel" />
+              </div>
+              <p class="ms-3">
+                Professionals a l'organització de viatges en grups, estades
+                lingüístiques i serveis turístics. Valua us ofereix un servei
+                innovador, rigorós i de proximitat.
+              </p>
+              <div class="ms-3">
+                <img src="images/logos quality.png" alt="logo quality" />
+              </div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Què necessites?</h6>
+              <p>
+                <a href="#!" class="text-reset valua">VALUA TRAVEL</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">VALUA LANGUAGES</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">VALUA GROUPS</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">VALUA ATTITUD</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">VALUA SERVICE</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                POLÍTICA DE PRIVACITAT
+              </h6>
+              <p><a href="" class="politica">Avís legal</a></p>
+              <p><a href="" class="politica">Política de Privacitat</a></p>
+              <p><a href="" class="politica">Política de Cookies</a></p>
+              <p><a href="" class="politica">Reclamació Gencat</a></p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div id="copyright" class="text-center p-4">
+        © 2024 Copyright Valua Travel, All Rights Reserved
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-      document.getElementById('languageSelect').addEventListener('change', function() {
-        var selectedValue = this.value;
-        window.location.href = selectedValue;
-      });
+      document
+        .getElementById("languageSelect")
+        .addEventListener("change", function () {
+          var selectedValue = this.value;
+          window.location.href = selectedValue;
+        });
     </script>
-</body>
+  </body>
 </html>

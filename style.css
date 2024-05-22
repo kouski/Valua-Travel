@@ -262,6 +262,7 @@ padding-top: 4rem;
   padding: 0.6rem 1.2rem;
 }
 
+
 /* Estilo para quitar el borde del campo de entrada de la contraseña */
 #password1,#password2 {
   border: none;

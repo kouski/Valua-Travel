@@ -368,6 +368,11 @@ input:focus {
 
 }
 
+.btn-ayuda i {
+  position: relative;
+  bottom: -2px;  /* Descomenta esta línea para mover el icono hacia abajo */
+}
+
 
 .ayuda hr{
   width: 20%;

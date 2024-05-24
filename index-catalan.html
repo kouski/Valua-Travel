@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Valua Travel catalán</title>
+    <title>Valua Travel castellano</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,7 +30,7 @@
           <a class="navbar-brand" href="#" style="font-size: 0.9rem">
             <img
               src="images/VALUA_Travel_horiz_white.png"
-              alt="Logo"
+              alt="Logo Valua Travel"
               width="285"
               height="60"
               class="d-inline-block align-text-center"
@@ -52,17 +52,15 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link text-white" aria-current="page" href="#"></a>
               </li>
 
               <li class="nav-item ms-3">
                 <a class="nav-link text-white" href="#servicios">CONTACTA</a>
-              </li>
+              </li> -->
               <li class="nav-item ms-3 pb-2">
-                <a class="nav-link text-white" href="#empresa"
-                  >PORTAL VALUA</a
-                >
+                <a class="nav-link text-white" href="#empresa">CONTACTA</a>
               </li>
               <li class="nav-item ms-3">
                 <select
@@ -71,7 +69,9 @@
                   id="languageSelect"
                 >
                   <option value="index-catalan.html" selected>CA</option>
-                  <option value="castellano.html">ES</option>
+                  <option value="castellano.html" >
+                    ES
+                  </option>
                 </select>
               </li>
             </ul>
@@ -81,27 +81,13 @@
     </header>
     <!-- Navbar -->
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-md-6 inscripcion pt-5">
-            <h4>BENVINGUTS/DES A LA ZONA</h4>
-            <h1>D’INSCRIPCIONS</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Hero -->
-
     <!-- Seccion de acceso -->
     <section class="acceso">
       <div class="container-fluid">
         <div class="row">
-          <div class="col">
-            <h2><span>Área</span> d’accés</h2>
-            <p>Escull una de les de les des opciones</p>
+          <div class="col area-acceso">
+            <h2><span>ÀREA D'ACCÉS</span></h2>
+            <p>Trieu una de les opcions</p>
           </div>
         </div>
       </div>
@@ -126,7 +112,7 @@
                   aria-controls="collapseOne"
                   data-bs-parent="#accordionContainer"
                 >
-                  <span class="mx-auto">LA MEVA INSCRIPCIÓ</span>
+                  <span class="mx-auto">NOVA INSCRIPCIÓ</span>
                 </button>
               </h2>
               <div
@@ -136,31 +122,36 @@
                 data-bs-parent="#accordionContainer"
               >
                 <div class="accordion-body text-center">
-                  <p class="mt-2 mb-2">Codi identificador del viatge</p>
+                  <p class="mt-2 mb-1">Codi identificador del viatge</p>
                   <input
                     type="text"
                     name=""
                     maxlength="5"
                     id="password1"
-                    placeholder="5 caracteres"
-                    class="p-2 mb-2"
+                    placeholder="*****"
+                    class="p-2 mb-0"
                   />
-                  <a href="inscripcion_1_cat.html"><button id="siguiente_password1" class="mt-3 mb-2">SEGUENT</button></a>
+                  <a href="inscripcion1.html"><button id="siguiente_password1" class="mt-3 mb-2">
+                    ENTRAR
+                  </button></a>
                 </div>
               </div>
             </div>
             <!-- Alerta -->
             <div class="alert d-none mt-1" role="alert" id="alertaOculta">
-              <b>El Codi indicat no correspon a cap dels nostres viatges,</b>
-              revisa que el codi sigui correcte o posa’t en contacte amb el teu
-              organitzador del viatge
+              <b
+                >El Codi indicat no correspon a cap dels nostres
+                viatges,</b
+              >
+              revisa que el codi sigui correcte o posa't en contacte amb el teu
+               organitzador del viatge.
             </div>
             <div class="alert d-none mt-1" role="alert" id="alertaOculta">
               <b
-                >El código indicado es válido, pero el período para inscribirse
-                se ha cerrado.</b
+                >El codi indicat és vàlid, però el període per inscriure's
+                s'ha tancat.</b
               >
-              Contacta con el organizador de tu viaje.
+              Contacta amb l´organitzador del teu viatge.
             </div>
           </div>
 
@@ -195,15 +186,14 @@
                   ></button>
                 </div>
                 <div class="modal-body ps-5 pe-5 pt-4">
-                  El codi identificador del viatge <b>(5 caràcters)</b> te’l
-                  proporcionarà el responsable organitzador del viatge.
+                  El codi identificador del viatge té <b>5 caràcters</b> te
+                  ho proporcionarà el responsable organitzador del viatge.
                 </div>
                 <div class="alerta pt-4">
                   <h5 class="ps-5 pe-5">Alerta</h5>
                   <p class="ps-5 pe-5">
-                    Tingues en compte la diferència entre el número
-                    <b>zero I la lletra “O”</b> del teu codi identificador del
-                    viatge.
+                    Tingues en compte la diferència entre el <b>número zero</b> i la
+                    <b>lletra “O”</b> del teu codi identificador del viatge.
                   </p>
                 </div>
               </div>
@@ -231,7 +221,7 @@
                   aria-controls="collapseTwo"
                   data-bs-parent="#accordionContainer"
                 >
-                  <span class="mx-auto">JA ESTIC INSCRIT A UN VIATGE</span>
+                  <span class="mx-auto">MODIFICAR LA MEVA INSCRIPCIÓ</span>
                 </button>
               </h2>
               <div
@@ -247,34 +237,43 @@
                     name=""
                     maxlength="5"
                     id="password2"
-                    placeholder="5 caracteres"
+                    placeholder="*****"
                     class="p-2 mb-2"
                   />
-                  <button id="siguiente_password2" class="mt-3 mb-2">SEGUENT</button>
+                  <p class="mt-2 mb-2">Número de DNI o Passaport del passatger</p>
+                  <input
+                    type="text"
+                    name=""
+                    maxlength="9"
+                    id="password2"
+                    placeholder="*********"
+                    class="p-2 mb-2"
+                  />
+                  <br>
+                  <button id="siguiente_password2" class="mt-3 mb-2">
+                    ENTRAR
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Seccion de acceso -->
 
-    <!-- Seccion de ayuda -->
-    <section class="ayuda">
-      <div class="container-fluid">
+      <div class="container-fluid ayuda">
         <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <h2><span>¿Necessites</span> ajuda?</h2>
+          <div class="col-12 text-center ">
+              <h2 id="necesitas-ayuda"><span>NECESSITES AJUDA?</span></h2>
             <p>T'ho posem fàcil</p>
+            <hr>
           </div>
         </div>
         <div class="row justify-content-around mb-5">
           <div class="col-12 col-sm-6 col-md-6 mb-3 d-flex align-items-stretch">
-            <div class="card mx-auto shadow" style="width: 28rem">
-              <div class="card-body text-center">
-                <p class="card-text">
-                  ¿Tens cap problema? <br />Envia'ns una captura de pantalla
+            <div class="mx-auto" style="width: 28rem">
+              <div class="text-center">
+                <p id="problema">
+                  Tens cap problema? <br />Envia'ns una captura de pantalla
                   aquí.
                 </p>
                 <a href="#" class="btn btn-ayuda"
@@ -290,8 +289,9 @@
         </div>
       </div>
     </section>
+    <!-- Seccion de acceso -->
 
-    <!-- Seccion de ayuda -->
+    
 
     <!-- Footer -->
     <footer class="text-center text-lg-start text-muted">
@@ -310,8 +310,8 @@
               </div>
               <p class="ms-3">
                 Professionals a l'organització de viatges en grups, estades
-                lingüístiques i serveis turístics. Valua us ofereix un servei
-                innovador, rigorós i de proximitat.
+                 lingüístiques i serveis turístics. Valua us ofereix un servei
+                 innovador, rigorós i de proximitat.
               </p>
               <div class="ms-3">
                 <img src="images/logos quality.png" alt="logo quality" />
@@ -324,19 +324,19 @@
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Què necessites?</h6>
               <p>
-                <a href="https://valuatravel.com/es/" class="text-reset valua">VALUA TRAVEL</a>
+                <a href="https://valuatravel.com/es/" class="text-reset valua" target="_blank">VALUA TRAVEL</a>
               </p>
               <p>
-                <a href="https://valuatravel.com/es/languages/" class="text-reset">VALUA LANGUAGES</a>
+                <a href="https://valuatravel.com/es/languages/" class="text-reset" target="_blank">VALUA LANGUAGES</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">VALUA GROUPS</a>
+                <a href="#!" class="text-reset" target="_blank">VALUA GROUPS</a>
               </p>
               <p>
-                <a href="https://valuatravel.com/es/attitude/" class="text-reset">VALUA ATTITUDE</a>
+                <a href="https://valuatravel.com/es/attitude/" class="text-reset" target="_blank">VALUA ATTITUDE</a>
               </p>
               <p>
-                <a href="https://valuatravel.com/es/services/" class="text-reset">VALUA SERVICE</a>
+                <a href="https://valuatravel.com/es/services/" class="text-reset" target="_blank">VALUA SERVICE</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -347,8 +347,8 @@
               <h6 class="text-uppercase fw-bold mb-4">
                 POLÍTICA DE PRIVACITAT
               </h6>
-              <p><a href="https://valuatravel.com/es/avis_legal-2-3/" class="politica" target="_blank">Avís legal</a></p>
-              <p><a href="https://valuatravel.com/es/privacitat" class="politica" target="_blank">Política de Privacitat</a></p>
+              <p><a href="https://valuatravel.com/es/avis_legal-2-3/"  class="politica" target="_blank">Avís legal</a></p>
+              <p><a href="https://valuatravel.com/es/privacitat" class="politica" target="_blank">Política de Privadesa</a></p>
               <p><a href="https://valuatravel.com/cookies/" class="politica" target="_blank">Política de Cookies</a></p>
               <p><a href="https://valuatravel.com/wp-content/uploads/2024/04/Reclamacio_gencat.pdf" class="politica" target="_blank">Reclamació Gencat</a></p>
             </div>

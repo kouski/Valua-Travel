@@ -14,6 +14,9 @@
   --background-button:#383838;
   --background-footer:#202020;
   --background-inicio:#F7ECDF;
+  --background-modal:#9D9489;
+  --background-cuerpo-modal:#E7DED5;
+
 }
 
 * {
@@ -141,7 +144,7 @@ select:active {
 }
 
 .accordion-button.derecho:not(.collapsed) {
-  background-color: #000000; /* Negro */
+  background-color: #9D9489; /* Negro */
   color: white;
 }
 
@@ -157,12 +160,12 @@ select:active {
 
 /* Estilo para el cuerpo del acordeón izquierdo */
 #collapseOne .accordion-body {
-  background-color: #D93D6750; /* Gris */
+  background-color: #E7DED5; /* Gris */
 }
 
 /* Estilo para el cuerpo del acordeón derecho */
 #collapseTwo .accordion-body {
-  background-color: #808080; /* Gris */
+  background-color: #E7DED5; /* Gris */
 }
 
 
@@ -221,9 +224,6 @@ input:focus {
   letter-spacing: -0.08px;
   background-color: #F7ECDF;
 }
-
-
-
 
 /* Estilo para quitar el borde exterior del campo de entrada de la contraseña */
 /* #password1:focus {

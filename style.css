@@ -348,6 +348,14 @@ input:focus {
   letter-spacing: -0.08px;
 }
 
+#necesitas-ayuda{
+  font-family: var(--font-family-title);
+  font-weight: bold;
+  font-size: 1.875rem;
+  color: var(--color-titulo);
+  letter-spacing: 0.3px;
+}
+
 
 .btn-ayuda{
   background-color: var(--color-secundario);

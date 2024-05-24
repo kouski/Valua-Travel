@@ -13,7 +13,7 @@
   --background-acceso: #E5E5E5;
   --background-button:#383838;
   --background-footer:#202020;
-  --background-alerta:#F7ECDF;
+  --background-inicio:#F7ECDF;
 }
 
 * {
@@ -69,76 +69,14 @@ select:active {
  * Navbar *
  ***********/
 
-/***********
- * Hero *
- ***********/
-
- .hero {
-  background:  url('images/close-up-hand-holding-travel-board.webp'); 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center 25%;
-  height: 550px;
-  width: 100%;
-  
-}
-
-.hero h1, .hero h4 {
-  color: var(--color-primario);
-}
-
-.inscripcion{
-  margin-top: 140px;
-  margin-left: 60px;
-}
-
-@media (max-width: 768px) {
-  .inscripcion {
-      margin-top: 70px;
-      margin-left: 20px;
-  }
-}
-
-.hero h1{
-font-family: var(--font-family-title);
-font-weight: 400;
-font-size: 5.9rem;
-letter-spacing: -0.95px;
-opacity: 1;
-
-}
-
-.hero h4{
-font-family: var(--font-family-body);
-font-weight: 500;
-font-size: 1.125rem;
-letter-spacing: 10.5px;
-padding-top: 4rem;
-
-}
-
-@media (max-width: 576px) {
-  .hero h1 {
-      font-size: 3.5rem;
-  }
-  .hero h4 {
-      font-size: 1rem;
-  }
-}
-
-
-/***********
- * Hero *
- ***********/
 
 /******************
  * Seccion acceso *
  ******************/
  .acceso {
-  background-color: var(--background-acceso);
+  background-color: var(--background-inicio);
   height: 100%;
-  margin-bottom: 80px;
-  margin-top: 0;
+  padding-top: 116px;
 }
 
 .acceso h2 {
@@ -317,13 +255,14 @@ input:focus {
 .modal-body{
   margin-bottom: 1.8em;
   margin-top: 1.4em;
+  text-align: left;
 }
 
 .modal-body, .alerta p{
   color: var(--color-titulo);
   font-family: var(--font-family-body);
   font-size: 1.2rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .alerta h5{
@@ -346,12 +285,6 @@ input:focus {
     right: 10px;
   }
 
-
-
-
-
-
-
 /******************
  * Modal *
  ******************/
@@ -361,8 +294,8 @@ input:focus {
  ******************/
 
 .ayuda {
-  background-color: white;
   height: auto;
+  padding-bottom: 3rem;
 }
 
 .ayuda h2{
@@ -383,7 +316,7 @@ input:focus {
   color: var(--color-texto);
   font-weight: 400;
   font-size: 1.125rem;
-  padding-bottom: 1.8rem;
+  padding-bottom: 0.1rem;
   letter-spacing: -0.09px;
   opacity: 1;
 }
@@ -399,25 +332,11 @@ input:focus {
 
 }
 
-.card.shadow {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
 
-.ayuda .card-title{
-  color: var(--color-titulo);
-  font-family: var(--font-family-body);
-  font-size: 1.125rem;
-  font-weight: bold;
-  letter-spacing: -0.09px;
-  opacity: 1;
-}
-.ayuda .card-text{
-  color: var(--color-texto);
-  font-family: var(--font-family-body);
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: -0.08px;
-  opacity: 1;
+.ayuda hr{
+  width: 20%;
+  margin: 1em auto;
+  
 }
 
 

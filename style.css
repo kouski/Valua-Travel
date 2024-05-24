@@ -82,6 +82,23 @@ select:active {
   padding-top: 116px;
 }
 
+.area-acceso span{
+  font-family: var(--font-family-title);
+  font-weight: bold;
+  color: var(--color-titulo);
+  font-size: 1.875rem;
+  letter-spacing: 0.3px;
+
+}
+.area-acceso p{
+  font-family: var(--font-family-body);
+  font-weight: 500;
+  color: var(--color-texto);
+  font-size: 1.125rem;
+  letter-spacing: -0.09px;
+
+}
+
 .acceso h2 {
   color: var(--color-titulo);
   font-family: var(--font-family-body);
@@ -190,9 +207,10 @@ select:active {
 
 .accordion-body p{
   font-family: var(--font-family-body);
-  font-size: 1.125rem;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--color-texto);
-  letter-spacing: -0.09px;
+  letter-spacing: -0.08px;
   padding-bottom: 0.5em;
 }
 
@@ -290,7 +308,7 @@ input:focus {
  ******************/
 
 /******************
- * Seccion ayuda *
+ * ayuda *
  ******************/
 
 .ayuda {
@@ -314,12 +332,22 @@ input:focus {
 
 .ayuda p{
   color: var(--color-texto);
+  font-family: var(--font-family-body);
+  font-size: 1.25rem;
   font-weight: 400;
-  font-size: 1.125rem;
-  padding-bottom: 0.1rem;
-  letter-spacing: -0.09px;
+  letter-spacing: -0.1px;
   opacity: 1;
+  padding-bottom: 0.1rem;
 }
+
+#problema{
+  color: var(--color-texto);
+  font-family: var(--font-family-body);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.08px;
+}
+
 
 .btn-ayuda{
   background-color: var(--color-secundario);
@@ -341,7 +369,7 @@ input:focus {
 
 
 /******************
- * Seccion ayuda *
+ *  ayuda *
  ******************/
 
 

@@ -443,6 +443,56 @@ Footer.fin
 \*-------------------------------------------*/
 
 
+/*-------------------------------------------*\ 
+Trip info.inicio
+\*-------------------------------------------*/
+.fondo-main{
+background-color: #EBEBEB;
+}
 
- 
+.fondo-main .container h2 {
+  background-color: transparent;
+  color: var(--color-secundario);
+  margin-left: 1em;
+}
+.trip-info {
+  background-color: #f1f1f1;
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 20px;
+  height: auto;
+}
+.trip-info h2 {
+  color: #d50032;
+}
+.trip-info p {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd; /* Línea horizontal debajo de cada <p> */
+  display: inline-block;
+  width: 95%;
+}
+.trip-info .label {
+  font-weight: bold;
+  color: var(--color-secundario);
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}
+.trip-info .row {
+  align-items: center;
+}
+.trip-info .column {
+  display: flex;
+  flex-direction: column;
+}
 
+@media (max-width: 768px) {
+  .trip-info p {
+      margin-bottom: 15px; /* Añadir espacio debajo del contenedor */
+  }
+}
+
+/*-------------------------------------------*\ 
+Trip info.fin
+\*-------------------------------------------*/

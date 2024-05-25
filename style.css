@@ -1,7 +1,8 @@
-/*
-**********
- * Variables *
- ***********/
+/*-------------------------------------------*\ 
+Variables
+\*-------------------------------------------*/
+
+
 :root {
   --color-navbar: #424242;
   --color-primario:#FFFFFF;
@@ -16,6 +17,9 @@
   --background-inicio:#F7ECDF;
   --background-modal:#9D9489;
   --background-cuerpo-modal:#E7DED5;
+  --background-barra-progreso:#F7ECDF;
+  --background-titulos-formulario:#F6ECDF;
+  --background-back-button:#818181;
 
 }
 
@@ -24,9 +28,16 @@
   margin: 0;
   padding: 0;
 }
-/***********
- * Navbar *
- ***********/
+
+/*-------------------------------------------*\ 
+*********PAGINA INDEX-CASTELLANO**************
+\*-------------------------------------------*/
+
+
+
+/*-------------------------------------------*\ 
+Navbar.inicio
+\*-------------------------------------------*/
 
 .navbar {
   background-color: var(--color-navbar);
@@ -68,14 +79,16 @@ select:active {
 }
 
 
-/***********
- * Navbar *
- ***********/
+/*-------------------------------------------*\ 
+Navbar.fin
+\*-------------------------------------------*/
 
 
-/******************
- * Seccion acceso *
- ******************/
+/*-------------------------------------------*\ 
+Seccion acceso.inicio
+\*-------------------------------------------*/
+
+
  .acceso {
   background-color: var(--background-inicio);
   height: 100%;
@@ -249,14 +262,14 @@ input:focus {
 } */
 
 
-/******************
- * Seccion acceso *
- ******************/
+/*-------------------------------------------*\ 
+Seccion acceso.fin
+\*-------------------------------------------*/
 
 
-/******************
- * Modal *
- ******************/
+/*-------------------------------------------*\ 
+Modal.inicio
+\*-------------------------------------------*/
 
 .modal-header h5{
   color: var(--color-texto);
@@ -303,13 +316,13 @@ input:focus {
     right: 10px;
   }
 
-/******************
- * Modal *
- ******************/
+/*-------------------------------------------*\ 
+Modal.fin
+\*-------------------------------------------*/
 
-/******************
- * ayuda *
- ******************/
+/*-------------------------------------------*\ 
+Ayuda.inicio
+\*-------------------------------------------*/
 
 .ayuda {
   height: auto;
@@ -381,15 +394,17 @@ input:focus {
 }
 
 
-/******************
- *  ayuda *
- ******************/
+/*-------------------------------------------*\ 
+Ayuda.fin
+\*-------------------------------------------*/
 
 
 
-/***********
- * Footer *
- ***********/
+/*-------------------------------------------*\ 
+Footer.inicio
+\*-------------------------------------------*/
+
+
 footer {
   margin-top: 0;
 }
@@ -431,9 +446,9 @@ i {
   color: #C1C1C1;
 }
 
-/***********
- * Footer *
- ***********/
+/*-------------------------------------------*\ 
+Footer.fin
+\*-------------------------------------------*/
 
 
 /*-------------------------------------------*\ 
@@ -447,7 +462,7 @@ Barra progreso.inicio
 .progreso{
   padding-top: 40px;
   padding-bottom: 20px;
-  background-color: var(--background-progreso);
+  background-color: var(--background-barra-progreso);
  }
 
  .progreso .bienvenida h2{
@@ -657,13 +672,18 @@ Pasajero.inicio
   font-weight: bold;
 }
 
-.personales{
-  background-color: var(--background-pasajero);
-  }
+/* .personales{
+  background-color: var(--background-titulos-formulario);
+  } */
   
-  .pasajero{
-  background-color: var(--background-pasajero);
+   .pasajero{
+  background-color: var(--background-titulos-formulario);
+  } 
+
+  .titulo-formulario{
+    background-color: var(--background-titulos-formulario);
   }
+
   
   .pasajero h1{
   color: var(--color-titulo);
@@ -765,6 +785,9 @@ Pasajero.inicio
   
   
   
+  .footer-inscripcion{
+    min-height: 600px;
+  }
   
   
   /*-------------------------------------------*\ 

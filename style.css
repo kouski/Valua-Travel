@@ -183,11 +183,13 @@ Seccion Acceso.inicio
 /* Estilo para el cuerpo del acordeón izquierdo */
 #collapseOne .accordion-body {
   background-color: #E7DED5; /* Gris */
+  width: 90%;
 }
 
 /* Estilo para el cuerpo del acordeón derecho */
 #collapseTwo .accordion-body {
   background-color: #E7DED5; /* Gris */
+  width: 90%;
 }
 
 

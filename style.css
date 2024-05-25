@@ -1,7 +1,7 @@
-/*-------------------------------------------*\ 
-Variables
-\*-------------------------------------------*/
-
+/*
+**********
+ * Variables *
+ ***********/
 :root {
   --color-navbar: #424242;
   --color-primario:#FFFFFF;
@@ -16,10 +16,6 @@ Variables
   --background-inicio:#F7ECDF;
   --background-modal:#9D9489;
   --background-cuerpo-modal:#E7DED5;
-  --background-inscripcion:#EBEBEB;
-  --background-pasajero:#F6ECDF;
-  --background-progreso:#F7ECDF;
-  --background-back-button:#818181;
 
 }
 
@@ -28,9 +24,9 @@ Variables
   margin: 0;
   padding: 0;
 }
-/*-------------------------------------------*\ 
-Navabar.inicio
-\*-------------------------------------------*/
+/***********
+ * Navbar *
+ ***********/
 
 .navbar {
   background-color: var(--color-navbar);
@@ -72,15 +68,14 @@ select:active {
 }
 
 
-/*-------------------------------------------*\ 
-Navbar.fin
-\*-------------------------------------------*/
+/***********
+ * Navbar *
+ ***********/
 
 
-/*-------------------------------------------*\ 
-Seccion Acceso.inicio
-\*-------------------------------------------*/
-
+/******************
+ * Seccion acceso *
+ ******************/
  .acceso {
   background-color: var(--background-inicio);
   height: 100%;
@@ -183,13 +178,11 @@ Seccion Acceso.inicio
 /* Estilo para el cuerpo del acordeón izquierdo */
 #collapseOne .accordion-body {
   background-color: #E7DED5; /* Gris */
-  width: 90%;
 }
 
 /* Estilo para el cuerpo del acordeón derecho */
 #collapseTwo .accordion-body {
   background-color: #E7DED5; /* Gris */
-  width: 90%;
 }
 
 
@@ -256,14 +249,14 @@ input:focus {
 } */
 
 
-/*-------------------------------------------*\ 
-Seccion Acesso.fin 
-\*-------------------------------------------*/
+/******************
+ * Seccion acceso *
+ ******************/
 
 
-/*-------------------------------------------*\ 
-Modal.inicio 
-\*-------------------------------------------*/
+/******************
+ * Modal *
+ ******************/
 
 .modal-header h5{
   color: var(--color-texto);
@@ -310,13 +303,13 @@ Modal.inicio
     right: 10px;
   }
 
-/*-------------------------------------------*\ 
-Modal.fin
-\*-------------------------------------------*/
+/******************
+ * Modal *
+ ******************/
 
-/*-------------------------------------------*\ 
-Ayuda.inicio 
-\*-------------------------------------------*/
+/******************
+ * ayuda *
+ ******************/
 
 .ayuda {
   height: auto;
@@ -388,17 +381,15 @@ Ayuda.inicio
 }
 
 
-/*-------------------------------------------*\ 
-Ayuda.fin
-\*-------------------------------------------*/
+/******************
+ *  ayuda *
+ ******************/
 
 
 
-/*-------------------------------------------*\ 
-Footer.inicio
-\*-------------------------------------------*/
-
-
+/***********
+ * Footer *
+ ***********/
 footer {
   margin-top: 0;
 }
@@ -440,9 +431,10 @@ i {
   color: #C1C1C1;
 }
 
-/*-------------------------------------------*\ 
-Footer.fin 
-\*-------------------------------------------*/
+/***********
+ * Footer *
+ ***********/
+
 
 /*-------------------------------------------*\ 
 *********PAGINA INSCRIPCION1******************
@@ -576,71 +568,71 @@ Titulo.inicio
 Titulo.fin
 \*-------------------------------------------*/
 
+
 /*-------------------------------------------*\ 
 Trip info.inicio
 \*-------------------------------------------*/
 .fondo-main{
-background-color: #EBEBEB;
-}
-
-.fondo-main .container h2 {
-  background-color: transparent;
-  margin-left: 1em;
-}
-
-.tuviaje{
-  color: var(--color-secundario);
-  font-family: var(--font-family-title);
-  font-size: 1.9rem;
-  font-weight: 700;
-  letter-spacing: 0.31px;
-}
-
-.trip-info {
-  background-color: #f1f1f1;
-  padding: 40px;
-  border-radius: 8px;
-  margin-top: 20px;
-  height: auto;
-}
-
-.trip-info p {
-  margin: 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd; /* Línea horizontal debajo de cada <p> */
-  display: inline-block;
-  width: 95%;
-}
-.trip-info .label {
-  color: var(--color-secundario);
-  font-family: var(--font-family-body);
-  font-size: 1.063rem;
-  font-weight: 500;
-  letter-spacing: -0.09px;
-  margin-left: 15px;
-  margin-right: 10px;
-  
-}
-.trip-info .row {
-  align-items: center;
-}
-.trip-info .column {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (max-width: 768px) {
-  .trip-info p {
-      margin-bottom: 15px; /* Añadir espacio debajo del contenedor */
+  background-color: #EBEBEB;
   }
-}
+  
+  .fondo-main .container h2 {
+    background-color: transparent;
+    margin-left: 1em;
+  }
+  
+  .tuviaje{
+    color: var(--color-secundario);
+    font-family: var(--font-family-title);
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 0.31px;
+  }
+  
+  .trip-info {
+    background-color: #f1f1f1;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    height: auto;
+  }
+  
+  .trip-info p {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* Línea horizontal debajo de cada <p> */
+    display: inline-block;
+    width: 95%;
+  }
+  .trip-info .label {
+    color: var(--color-secundario);
+    font-family: var(--font-family-body);
+    font-size: 1.063rem;
+    font-weight: 500;
+    letter-spacing: -0.09px;
+    margin-left: 15px;
+    margin-right: 10px;
+    
+  }
+  .trip-info .row {
+    align-items: center;
+  }
+  .trip-info .column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .trip-info p {
+        margin-bottom: 15px; /* Añadir espacio debajo del contenedor */
+    }
+  }
+  
+  /*-------------------------------------------*\ 
+  Trip info.fin
+  \*-------------------------------------------*/
 
-/*-------------------------------------------*\ 
-Trip info.fin
-\*-------------------------------------------*/
-
-
-/*-------------------------------------------*\ 
+  /*-------------------------------------------*\ 
 Pasajero.inicio
 \*-------------------------------------------*/
 
@@ -652,6 +644,7 @@ Pasajero.inicio
   border-color: var(--color-secundario);
   box-shadow: 0 0 0 0.25rem rgba(217, 83, 79, 0.25);
 }
+
 .custom-radio-group {
   display: flex;
   align-items: center;
@@ -665,126 +658,121 @@ Pasajero.inicio
 }
 
 .personales{
-background-color: var(--background-pasajero);
-}
+  background-color: var(--background-pasajero);
+  }
+  
+  .pasajero{
+  background-color: var(--background-pasajero);
+  }
+  
+  .pasajero h1{
+  color: var(--color-titulo);
+  font-family: var(--font-family-body);
+  font-size: 1.75rem;
+  letter-spacing: 0.28px;
+  }
+  
+  .pasajero h2{
+  color: var(--color-secundario);
+  font-family: var(--font-family-body);
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.25px;
+  margin-left: 1.7em;
+  }
 
-.pasajero{
-background-color: var(--background-pasajero);
-}
-
-.pasajero h1{
-color: var(--color-titulo);
-font-family: var(--font-family-body);
-font-size: 1.75rem;
-letter-spacing: 0.28px;
-}
-
-.pasajero h2{
-color: var(--color-secundario);
-font-family: var(--font-family-body);
-font-size: 1.5rem;
-font-weight: 900;
-letter-spacing: 0.25px;
-margin-left: 1.7em;
-}
-
-.pasajero i{
-color: var(--color-titulo);
-}
-
-.fondo-pasajero{
-background-color: var(--color-primario);
-}
-
-.container {
-padding-left: 0;
-padding-right: 0;
-}
-
-.container h2 {
-width: 90%;
-background-color: var(--background-pasajero); /* Cambia esto al color de fondo que prefieras */
-}
-
+  .pasajero i{
+    color: var(--color-titulo);
+    }
+    
+    .fondo-pasajero{
+    background-color: var(--color-primario);
+    }
 
 
 /* botones atrás-siguiente */
 
 .btn-back {
-background-color: var(--background-back-button);
-color: white;
-border-right: 2px solid white;
-}
-.btn-next {
-background-color: var(--color-secundario);
-color: white;
-}
+  background-color: var(--background-back-button);
+  color: white;
+  border-right: 2px solid white;
+  }
+  .btn-next {
+  background-color: var(--color-secundario);
+  color: white;
+  }
+  
+  
+  
+  
+  .custom-btn-height {
+  height: 80px; /* Ajusta esta altura según tus necesidades */
+  border-radius: 0;
+  }
+  
+  .btn-back, .btn-next {
+  margin: 0; /* Asegúrate de que no haya márgenes entre los botones */
+  font-family: var(--font-family-body);
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--color-primario);
+  }
+  
+  .col-6 {
+  padding: 0; /* Elimina cualquier padding del contenedor */
+  }
+  
+  .row.no-gutters {
+  margin-left: 0;
+  margin-right: 0;
+  }
+  
+  /* datos personales */
+  
+  /* Estilo base */
+  .custom-radio-group .form-check-inline {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Añade margen derecho para espaciado entre los radios */
+  }
+  
+  .form-check-label {
+  margin-left: 5px; /* Espacio entre el radio y el texto */
+  }
+  
+  /* Media Queries para dispositivos móviles y tablets */
+  @media (max-width: 768px) {
+  .custom-radio-group .form-check-inline {
+    display: block;
+    margin-bottom: 10px;
+  }
+  }
+  
+  @media (max-width: 1024px) {
+  .form-section .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  }
+  
+  
+  
+  
+  
+  /*-------------------------------------------*\ 
+  Pasajero.fin
+  \*-------------------------------------------*/
+  
+  
+  
+  
+  
+  /*-------------------------------------------*\ 
+  *********PAGINA INSCRIPCION1******************
+  \*-------------------------------------------*/
 
+  
+      
+      
+ 
 
-
-
-.custom-btn-height {
-height: 80px; /* Ajusta esta altura según tus necesidades */
-border-radius: 0;
-}
-
-.btn-back, .btn-next {
-margin: 0; /* Asegúrate de que no haya márgenes entre los botones */
-font-family: var(--font-family-body);
-font-weight: bold;
-font-size: 1.25rem;
-color: var(--color-primario);
-}
-
-.col-6 {
-padding: 0; /* Elimina cualquier padding del contenedor */
-}
-
-.row.no-gutters {
-margin-left: 0;
-margin-right: 0;
-}
-
-/* datos personales */
-
-/* Estilo base */
-.custom-radio-group .form-check-inline {
-display: flex;
-align-items: center;
-margin-right: 10px; /* Añade margen derecho para espaciado entre los radios */
-}
-
-.form-check-label {
-margin-left: 5px; /* Espacio entre el radio y el texto */
-}
-
-/* Media Queries para dispositivos móviles y tablets */
-@media (max-width: 768px) {
-.custom-radio-group .form-check-inline {
-  display: block;
-  margin-bottom: 10px;
-}
-}
-
-@media (max-width: 1024px) {
-.form-section .col-md-6 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-}
-
-
-
-
-
-/*-------------------------------------------*\ 
-Pasajero.fin
-\*-------------------------------------------*/
-
-
-
-
-
-/*-------------------------------------------*\ 
-*********PAGINA INSCRIPCION1******************
-\*-------------------------------------------*/

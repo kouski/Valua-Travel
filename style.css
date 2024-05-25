@@ -442,6 +442,137 @@ i {
 Footer.fin 
 \*-------------------------------------------*/
 
+/*-------------------------------------------*\ 
+*********PAGINA INSCRIPCION1******************
+\*-------------------------------------------*/
+
+/*-------------------------------------------*\ 
+Barra progreso.inicio
+\*-------------------------------------------*/
+
+.progreso{
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: var(--background-progreso);
+ }
+
+ .progreso .bienvenida h2{
+  color: var(--color-texto);
+  font-family: var(--font-family-title);
+  font-size: 2.75rem;
+  font-weight: 400;
+  padding-left: 3rem;
+  letter-spacing: 0.44px;
+  text-align: center;
+ }
+ .progreso .bienvenida p{
+  color: var(--color-texto);
+  font-family: var(--font-family-body);
+  font-size: 0.563rem;
+  font-weight: 500;
+  letter-spacing: 4.5px;
+  text-align: center;
+  margin-bottom: 0;
+ }
+
+
+.progress-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.progress {
+  height: 8px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--color-secundario);
+  transition: width 0.4s ease;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primario);
+  border: 2px solid var(--color-secundario);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #6c757d;
+}
+
+.step.completed {
+  background-color: var(--color-secundario);
+  color: var(--color-primario);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .progress-container {
+      max-width: 100%;
+  }
+  .steps {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .step {
+      margin: 5px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .text-center h2, .text-center h1 {
+      text-align: center;
+  }
+}
+
+
+/*-------------------------------------------*\ 
+Barra progreso.fin
+\*-------------------------------------------*/
+
+/*-------------------------------------------*\ 
+Titulo.inicio
+\*-------------------------------------------*/
+.titulo{
+  height: auto;
+  margin-top: 20px;
+}
+
+.titulo h2 span{
+  color: var(--color-secundario);
+  font-family: var(--font-family-title);
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+.titulo h2{
+  color: var(--color-titulo);
+  font-family: var(--font-family-title);
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+
+/*-------------------------------------------*\ 
+Titulo.fin
+\*-------------------------------------------*/
 
 /*-------------------------------------------*\ 
 Trip info.inicio
@@ -504,4 +635,154 @@ background-color: #EBEBEB;
 
 /*-------------------------------------------*\ 
 Trip info.fin
+\*-------------------------------------------*/
+
+
+/*-------------------------------------------*\ 
+Pasajero.inicio
+\*-------------------------------------------*/
+
+.form-check-input:checked {
+  background-color: var(--color-secundario);
+  border-color: var(--color-secundario);
+}
+.form-check-input:focus {
+  border-color: var(--color-secundario);
+  box-shadow: 0 0 0 0.25rem rgba(217, 83, 79, 0.25);
+}
+.custom-radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.form-section {
+  padding: 20px;
+}
+.form-label {
+  font-weight: bold;
+}
+
+.personales{
+background-color: var(--background-pasajero);
+}
+
+.pasajero{
+background-color: var(--background-pasajero);
+}
+
+.pasajero h1{
+color: var(--color-titulo);
+font-family: var(--font-family-body);
+font-size: 1.75rem;
+letter-spacing: 0.28px;
+}
+
+.pasajero h2{
+color: var(--color-secundario);
+font-family: var(--font-family-body);
+font-size: 1.5rem;
+font-weight: 900;
+letter-spacing: 0.25px;
+margin-left: 1.7em;
+}
+
+.pasajero i{
+color: var(--color-titulo);
+}
+
+.fondo-pasajero{
+background-color: var(--color-primario);
+}
+
+.container {
+padding-left: 0;
+padding-right: 0;
+}
+
+.container h2 {
+width: 90%;
+background-color: var(--background-pasajero); /* Cambia esto al color de fondo que prefieras */
+}
+
+
+
+/* botones atrás-siguiente */
+
+.btn-back {
+background-color: var(--background-back-button);
+color: white;
+border-right: 2px solid white;
+}
+.btn-next {
+background-color: var(--color-secundario);
+color: white;
+}
+
+
+
+
+.custom-btn-height {
+height: 80px; /* Ajusta esta altura según tus necesidades */
+border-radius: 0;
+}
+
+.btn-back, .btn-next {
+margin: 0; /* Asegúrate de que no haya márgenes entre los botones */
+font-family: var(--font-family-body);
+font-weight: bold;
+font-size: 1.25rem;
+color: var(--color-primario);
+}
+
+.col-6 {
+padding: 0; /* Elimina cualquier padding del contenedor */
+}
+
+.row.no-gutters {
+margin-left: 0;
+margin-right: 0;
+}
+
+/* datos personales */
+
+/* Estilo base */
+.custom-radio-group .form-check-inline {
+display: flex;
+align-items: center;
+margin-right: 10px; /* Añade margen derecho para espaciado entre los radios */
+}
+
+.form-check-label {
+margin-left: 5px; /* Espacio entre el radio y el texto */
+}
+
+/* Media Queries para dispositivos móviles y tablets */
+@media (max-width: 768px) {
+.custom-radio-group .form-check-inline {
+  display: block;
+  margin-bottom: 10px;
+}
+}
+
+@media (max-width: 1024px) {
+.form-section .col-md-6 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+}
+
+
+
+
+
+/*-------------------------------------------*\ 
+Pasajero.fin
+\*-------------------------------------------*/
+
+
+
+
+
+/*-------------------------------------------*\ 
+*********PAGINA INSCRIPCION1******************
 \*-------------------------------------------*/

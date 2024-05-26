@@ -560,7 +560,8 @@ Titulo.inicio
 \*-------------------------------------------*/
 .titulo{
   height: auto;
-  margin-top: 20px;
+  padding-top: 1em;
+  background-color: white;
 }
 
 .titulo h2 span{
@@ -587,6 +588,31 @@ Titulo.fin
 /*-------------------------------------------*\ 
 Trip info.inicio
 \*-------------------------------------------*/
+.tab-header {
+  position: absolute;
+  top: -40px; /* Ajusta según el tamaño de la pestaña */
+  left: 0;
+  background-color: var(--color-secundario);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  padding-top: 2em;
+}
+
+.tab-header p{
+  font-family: var(--font-family-title);
+  font-weight: 300;
+  color: var(--color-secundario);
+  font-size: 1.25rem;
+  letter-spacing: 0.2px;
+}
+
+.toast-info{
+  position: absolute;
+}
+
+
 .fondo-main{
   background-color: #EBEBEB;
   }
@@ -650,6 +676,15 @@ Trip info.inicio
   /*-------------------------------------------*\ 
 Pasajero.inicio
 \*-------------------------------------------*/
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.pasajero{
+  background-color: var(--background-pasajero);
+}
 
 .form-check-input:checked {
   background-color: var(--color-secundario);
@@ -668,6 +703,11 @@ Pasajero.inicio
 .form-section {
   padding: 20px;
 }
+
+.pt-custom {
+  margin-top: 80px;
+}
+
 .form-label {
   font-weight: bold;
 }

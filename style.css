@@ -240,9 +240,10 @@ Seccion acceso.inicio
 
 
 /* Estilo para quitar el borde del campo de entrada de la contraseña */
-#password1,#password2 {
+#password1,#password2,#dniPasaporte {
   border: none;
 }
+
 
 input:focus {
   outline-color: grey; /* Cambia el color de fondo al hacer focus */

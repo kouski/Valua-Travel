@@ -132,8 +132,23 @@ Seccion acceso.inicio
   text-align: center;
 }
 
-.acceso h2 span{
+/* .acceso h2 span{
   font-weight: 900;
+} */
+
+#boton-izquierdo{
+  color: var(--color-primario);
+  font-family: var(--font-family-body);
+  font-weight: 500 !important;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
+#boton-derecho{
+  color: var(--color-primario);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500 !important;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
 }
 
 .accordion{

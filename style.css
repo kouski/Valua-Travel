@@ -899,11 +899,40 @@ Pasajero.inicio
   font-size: 1.2em; 
 }
 
+.btn-custom-color-izquierda {
+  background-color: var(--background-back-button); /* Your custom background color */
+  color: #fff;
+}
+.btn-custom-color-izquierda:hover {
+  background-color: var(--color-titulo); /* Your custom background color */
+  color: #fff;
+}
+
+
+.btn-custom-color-derecha {
+  background-color: var(--color-secundario); /* Your custom background color */
+  color: #fff;
+}
+
+.btn-custom-color-derecha:hover {
+  background-color: var(--color-titulo); /* Your custom background color */
+  color: #fff;
+}
+
+.btn-custom-size {
+color: var(--color-primario);
+font-family: var(--font-family-title);
+font-weight: bold;
+font-size: 1.3rem;
+letter-spacing: 0px;
+
+}
+
 @media (max-width: 576px) {
   .btn-custom-size {
-      width: 200px; /* Custom width for small screens */
-      height: 60px; /* Adjust height if needed */
-      font-size: 1em; /* Adjust font size if needed */
+      width: 200px; 
+      height: 60px; 
+      font-size: 1em;
   }
 }
 

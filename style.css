@@ -327,6 +327,7 @@ Ayuda.inicio
 .ayuda {
   height: auto;
   padding-bottom: 3rem;
+  background-color: var(--background-inicio);
 }
 
 .ayuda h2{

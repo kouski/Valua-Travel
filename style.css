@@ -250,11 +250,20 @@ input:focus {
 }
 
 .alert{
+  border-top: 1px solid rgb(193, 193, 193);
   color: var(--color-texto);
   font-family: var(--font-family-body);
   font-size: 1rem;
   letter-spacing: -0.08px;
-  background-color: #F7ECDF;
+  text-align: left;
+}
+
+.alerta-acordeon1{
+  color: var(--color-secundario);
+  font-family: var(--font-family-title);
+  font-weight: bold;
+  font-size: 1.25rem;
+  letter-spacing: -0.1px;
 }
 
 /* Estilo para quitar el borde exterior del campo de entrada de la contraseña */

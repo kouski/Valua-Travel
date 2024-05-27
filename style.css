@@ -253,6 +253,9 @@ Seccion acceso.inicio
   padding: 0.6rem 1.2rem;
 }
 
+#siguiente_password1:hover,#siguiente_password2:hover{
+  background-color: var(--color-titulo);
+}
 
 /* Estilo para quitar el borde del campo de entrada de la contraseña */
 #password1,#password2,#dniPasaporte {
@@ -411,8 +414,13 @@ Ayuda.inicio
   font-size: 1rem;
   padding: 0.4rem 2.5rem;
   opacity: 1;
-
 }
+
+.btn-ayuda:hover{
+  background-color: var(--color-titulo);
+  color: var(--color-primario);
+}
+
 
 .btn-ayuda i {
   position: relative;

@@ -22,7 +22,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <>
     <!-- Navbar -->
     <header>
       <nav class="navbar navbar-expand-md fixed-top">
@@ -84,211 +84,144 @@
     <!-- Seccion de acceso -->
     <section class="acceso">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col area-acceso">
-            <h2><span>ÁREA DE ACCESO</span></h2>
-            <p>Elige una de las opciones</p>
+          <div class="row">
+              <div class="col area-acceso">
+                  <h2><span>ÁREA DE ACCESO</span></h2>
+                  <p>Elige una de las opciones</p>
+              </div>
           </div>
-        </div>
       </div>
       <div id="accordionContainer" class="container">
-        <div class="row">
-          <div class="col">
-            <!-- Primer acordeón -->
-            <div class="accordion-item position-relative">
-              <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                ><i
-                  class="bi bi-info-circle-fill position-absolute top-3 end-0 m-3"
-                  style="font-size: 1.5em; top: -1em; color: #d93d67"
-                ></i
-              ></a>
-              <h2 class="accordion-header text-center" id="headingOne">
-                <button
-                  class="accordion-button izquierdo"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                  data-bs-parent="#accordionContainer"
-                >
-                  <span class="mx-auto">NUEVA INSCRIPCIÓN</span>
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionContainer"
-              >
-                <div class="accordion-body text-center">
-                  <p class="mt-2 mb-1">Código identificador del viaje</p>
-                  <input
-                    type="text"
-                    name=""
-                    maxlength="5"
-                    id="password1"
-                    placeholder="*****"
-                    class="p-2 mb-0"
-                  />
-                  <a href="inscripcion1.html"><button id="siguiente_password1" class="mt-3 mb-2">
-                    ENTRAR
-                  </button></a>
-                </div>
+          <div class="row">
+              <div class="col">
+                  <!-- Primer acordeón -->
+                  <div class="accordion-item position-relative">
+                      <a href="" data-bs-toggle="modal" data-bs-target="#modal1">
+                          <i class="bi bi-info-circle-fill position-absolute top-3 end-0 m-3" style="font-size: 1.5em; top: -1em; color: #d93d67"></i>
+                      </a>
+                      <h2 class="accordion-header text-center" id="headingOne">
+                          <button class="accordion-button izquierdo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-bs-parent="#accordionContainer">
+                              <span class="mx-auto">NUEVA INSCRIPCIÓN</span>
+                          </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionContainer">
+                          <div class="accordion-body text-center">
+                              <p class="mt-2 mb-1">Código identificador del viaje</p>
+                              <input type="text" name="" maxlength="5" id="password1" placeholder="*****" class="p-2 mb-0" />
+                              <a href="inscripcion1.html"><button id="siguiente_password1" class="mt-3 mb-2">ENTRAR</button></a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Alerta acordeon 1-->
+                  <div class="alert d-none mt-1" role="alert" id="alertaOculta">
+                      <b>El Código indicado no corresponde a ninguno de nuestros viajes,</b> revisa que el código sea correcto o ponte en contacto con tu organizador del viaje.
+                  </div>
+                  <div class="alert d-none mt-1" role="alert" id="alertaOculta">
+                      <b>El código indicado es válido, pero el período para inscribirse se ha cerrado.</b> Contacta con el organizador de tu viaje.
+                  </div>
               </div>
-            </div>
-            <!-- Alerta -->
-            <div class="alert d-none mt-1" role="alert" id="alertaOculta">
-              <b
-                >El Código indicado no corresponde a ninguno de nuestros
-                viajes,</b
-              >
-              revisa que el código sea correcto o ponte en contacto con tu
-              organizador del viaje.
-            </div>
-            <div class="alert d-none mt-1" role="alert" id="alertaOculta">
-              <b
-                >El código indicado es válido, pero el período para inscribirse
-                se ha cerrado.</b
-              >
-              Contacta con el organizador de tu viaje.
-            </div>
-          </div>
-
-          <!-- modal -->
-          <div
-            class="modal fade"
-            id="staticBackdrop"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5
-                    class="modal-title ps-3 pe-3 pb-2"
-                    id="staticBackdropLabel"
-                  >
-                    <i
-                      class="bi bi-info-circle-fill pe-2 mt-5"
-                      style="font-size: 1.2em; color: #d93d67"
-                    ></i
-                    >Código identificador del viaje
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body ps-5 pe-5 pt-4">
-                  El código identificador del viaje tiene <b>5 caracteres</b> te
-                  lo proporcionará el responsable organizador del viaje.
-                </div>
-                <div class="alerta pt-4">
-                  <h5 class="ps-5 pe-5">Alerta</h5>
-                  <p class="ps-5 pe-5">
-                    Ten en cuenta la diferencia entre el <b>número cero</b> y la
-                    <b>letra “O”</b> de tu código identificador del viaje.
-                  </p>
-                </div>
+  
+              <!-- Modal 1 -->
+              <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title ps-3 pe-3 pb-2" id="modal1Label">
+                                  <i class="bi bi-info-circle-fill pe-2 mt-5" style="font-size: 1.2em; color: #d93d67"></i>
+                                  Código identificador del viaje
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body ps-5 pe-5 pt-4">
+                              El código identificador del viaje tiene <b>5 caracteres</b> te lo proporcionará el responsable organizador del viaje.
+                          </div>
+                          <div class="alerta pt-4">
+                              <h5 class="ps-5 pe-5">Alerta</h5>
+                              <p class="ps-5 pe-5">
+                                  Ten en cuenta la diferencia entre el <b>número cero</b> y la <b>letra “O”</b> de tu código identificador del viaje.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-
-          <!-- modal -->
-
-          <div class="col">
-            <!-- Segundo acordeón -->
-            <div class="accordion-item position-relative">
-              <a href=""
-                ><i
-                  class="bi bi-info-circle-fill position-absolute top-3 end-0 m-3"
-                  style="font-size: 1.5em; top: -1em;right: 3em ;color: #000000;"
-                ></i
-              ></a>
-              <h2 class="accordion-header text-center" id="headingTwo">
-                <button
-                  class="accordion-button derecho"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                  data-bs-parent="#accordionContainer"
-                >
-                  <span class="mx-auto">MODIFICAR MI INSCRIPCIÓN</span>
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#accordionContainer"
-              >
-                <div class="accordion-body text-center">
-                  <p class="mt-2 mb-2">Código identificador del viaje</p>
-                  <input
-                    type="text"
-                    name=""
-                    maxlength="5"
-                    id="password2"
-                    placeholder="*****"
-                    class="p-2 mb-2"
-                  />
-                  <p class="mt-2 mb-2">Número de DNI o Pasaporte del pasajero</p>
-                  <input
-                    type="text"
-                    name=""
-                    maxlength="9"
-                    id="password2"
-                    placeholder="*********"
-                    class="p-2 mb-2"
-                  />
-                  <br>
-                  <button id="siguiente_password2" class="mt-3 mb-2">
-                    ENTRAR
-                  </button>
-                </div>
+  
+              <!-- Segundo acordeón -->
+              <div class="col">
+                  <div class="accordion-item position-relative">
+                      <a href="" data-bs-toggle="modal" data-bs-target="#modal2">
+                          <i class="bi bi-info-circle-fill position-absolute top-3 end-0 m-3" style="font-size: 1.5em; top: -1em; right: 3em; color: #000000;"></i>
+                      </a>
+                      <h2 class="accordion-header text-center" id="headingTwo">
+                          <button class="accordion-button derecho" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-bs-parent="#accordionContainer">
+                              <span class="mx-auto">MODIFICAR MI INSCRIPCIÓN</span>
+                          </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionContainer">
+                          <div class="accordion-body text-center">
+                              <p class="mt-2 mb-2">Código identificador del viaje</p>
+                              <input type="text" name="" maxlength="5" id="password2" placeholder="*****" class="p-2 mb-2" />
+                              <p class="mt-2 mb-2">Número de DNI o Pasaporte del pasajero</p>
+                              <input type="text" name="" maxlength="9" id="dniPasaporte" placeholder="*********" class="p-2 mb-2" />
+                              <br>
+                              <button id="siguiente_password2" class="mt-3 mb-2">ENTRAR</button>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
+  
+              <!-- Modal 2 -->
+              <div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title ps-3 pe-3 pb-2" id="modal2Label">
+                                  <i class="bi bi-info-circle-fill pe-2 mt-5" style="font-size: 1.2em; color: #000000"></i>
+                                  Código identificador del viaje
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body ps-5 pe-5 pt-4">
+                              El código identificador del viaje tiene <b>5 caracteres</b> te lo proporcionará el responsable organizador del viaje.
+                          </div>
+                          <div class="alerta pt-4">
+                              <h5 class="ps-5 pe-5">Alerta</h5>
+                              <p class="ps-5 pe-5">
+                                  Ten en cuenta la diferencia entre el <b>número cero</b> y la <b>letra “O”</b> de tu código identificador del viaje.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
           </div>
-        </div>
       </div>
-
-      <div class="container-fluid ayuda">
-        <div class="row justify-content-center">
-          <div class="col-12 text-center ">
+  </section>
+  
+  <div class="container-fluid ayuda">
+      <div class="row justify-content-center">
+          <div class="col-12 text-center">
               <h2 id="necesitas-ayuda"><span>¿NECESITAS AYUDA?</span></h2>
-            <p>Te lo ponemos fácil</p>
-            <hr>
+              <p>Te lo ponemos fácil</p>
+              <hr>
           </div>
-        </div>
-        <div class="row justify-content-around mb-5">
-          <div class="col-12 col-sm-6 col-md-6 mb-3 d-flex align-items-stretch">
-            <div class="mx-auto" style="width: 28rem">
-              <div class="text-center">
-                <p id="problema">
-                  ¿Tienes algún problema? <br />Envíanos una captura de pantalla
-                  aquí.
-                </p>
-                <a href="#" class="btn btn-ayuda"
-                  ><i
-                    class="bi bi-envelope-fill mx-auto pe-2"
-                    style="font-size: 1.3rem"
-                  ></i
-                  >ENVIAR</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+      <div class="row justify-content-around mb-5">
+          <div class="col-12 col-sm-6 col-md-6 mb-3 d-flex align-items-stretch">
+              <div class="mx-auto" style="width: 28rem">
+                  <div class="text-center">
+                      <p id="problema">
+                          ¿Tienes algún problema? <br />Envíanos una captura de pantalla aquí.
+                      </p>
+                      <a href="#" class="btn btn-ayuda">
+                          <i class="bi bi-envelope-fill mx-auto pe-2" style="font-size: 1.3rem"></i>
+                          ENVIAR
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
     <!-- Seccion de acceso -->
 
     

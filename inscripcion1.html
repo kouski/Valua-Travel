@@ -38,7 +38,7 @@
                 </li> -->
                 
                 <li class="nav-item ms-3">
-                  <a class="nav-link text-white" href="https://valuatravel.com/contacte/" target="_blank">CONTACTA</a>
+                  <a class="nav-link text-white" href="#servicios">CONTACTA</a>
                 </li>
                 <li class="nav-item ms-3 pb-2">
                   <a class="nav-link text-white" href="#empresa">PORTAL VALUA</a>
@@ -155,8 +155,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Cerrar"></button>
                     </div>
                     <div class="toast-body">
-                      <p>PASAJERO/A</p>
-                      <p>Niño o adulto que viajará en el programa o ministay.</p>
+                      <p class="titulo-toast">PASAJERO/A</p>
+                      <p class="parrafo-toast">Niño o adulto que viajará en el programa o ministay.</p>
                     </div>
                 </div>
             </div>
@@ -207,7 +207,7 @@
             <div class="form-section row ps-5 pe-5">
                 <div class="col-md-4 pb-3">
                     <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre">
+                    <input type="text" class="form-control" id="nombre" value="Juan">
                 </div>
                 <div class="col-md-4 pb-3">
                     <label for="primer-apellido" class="form-label">1er apellido</label>
@@ -220,49 +220,81 @@
             </div>
 
             <!-- Fecha de nacimiento -->
-            <div class="form-section row ps-5 pe-5">
-                <!-- Columna izquierda -->
-                <div class="col-md-6">
-                  <!-- First Row: Fecha de nacimiento -->
-                  <div class="mb-3">
-                      <label for="day" class="form-label">Fecha de nacimiento</label>
-                      <div class="d-flex">
-                          <input type="number" class="form-control me-2" id="day" placeholder="Día" min="1" max="31">
-                          <input type="number" class="form-control me-2" id="month" placeholder="Mes" min="1" max="12">
-                          <input type="number" class="form-control" id="year" placeholder="Año" min="1900" max="2024">
-                      </div>
-                  </div>
-                  <!-- Second Row: Email -->
-                  <div class="mb-3">
-                      <label for="email" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="email">
-                  </div>
-              </div>
-              <!-- Second Column -->
+          
+            <div class="form-section row ps-5 pe-5"> 
+
               <div class="col-md-6">
-                  <!-- First Row: Nacionalidad -->
-                  <div class="mb-3">
-                    <label for="nationality" class="form-label">Nacionalidad</label>
-                    <select class="form-select" id="nationality">
-                        <option selected>Seleccione su nacionalidad</option>
-                        <option value="argentina">Argentina</option>
-                        <option value="bolivia">Bolivia</option>
-                        <option value="chile">Chile</option>
-                        <option value="colombia">Colombia</option>
-                        <option value="ecuador">Ecuador</option>
-                        <option value="paraguay">Paraguay</option>
-                        <option value="peru">Perú</option>
-                        <option value="uruguay">Uruguay</option>
-                        <option value="venezuela">Venezuela</option>
-                        <!-- Add more options as needed -->
-                    </select>
+                <!-- First Row: Fecha de nacimiento -->
+                <div class="mb-3">
+                    <label for="day" class="form-label">Fecha de nacimiento</label>
+                    <div class="d-flex">
+                        <input type="number" class="form-control me-2" id="day" placeholder="Día" min="1" max="31">
+                        <input type="number" class="form-control me-2" id="month" placeholder="Mes" min="1" max="12">
+                        <input type="number" class="form-control" id="year" placeholder="Año" min="1900" max="2024">
+                    </div>
                 </div>
-                  <!-- Second Row: Teléfono móvil -->
-                  <div class="mb-3">
-                      <label for="phone" class="form-label">Teléfono móvil</label>
-                      <input type="tel" class="form-control" id="phone">
+                <!-- Second Row: Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+            </div>
+            <!-- Second Column -->
+            <div class="col-md-6">
+                <!-- First Row: Nacionalidad -->
+                <div class="mb-3">
+                  <label for="nationality" class="form-label">Nacionalidad</label>
+                  <select class="form-select" id="nationality">
+                      <option selected>Seleccione su nacionalidad</option>
+                      <option value="argentina">Argentina</option>
+                      <option value="bolivia">Bolivia</option>
+                      <option value="chile">Chile</option>
+                      <option value="colombia">Colombia</option>
+                      <option value="ecuador">Ecuador</option>
+                      <option value="paraguay">Paraguay</option>
+                      <option value="peru">Perú</option>
+                      <option value="uruguay">Uruguay</option>
+                      <option value="venezuela">Venezuela</option>
+                      <!-- Add more options as needed -->
+                  </select>
+              </div>
+                <!-- Second Row: Teléfono móvil -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Teléfono móvil</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Teléfono móvil">
+                </div>
+            </div>
+                 
+            </div>
+
+        </form>
+        <div class="pasajero ps-2 pt-3">
+          <h2 class="pt-3 pb-3"><b>Documentación del viajero</b></h2>
+        </div>
+        <form>
+          <div class="form-section row ps-5 pe-5">
+            <!-- Label and radio buttons for document type -->
+            <div class="col-12">
+              <label class="form-label">Tipo de documento</label>
+              <div class="d-flex flex-wrap">
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="documento" id="dni" value="dni" checked>
+                      <label class="form-check-label" for="dni">DNI</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="documento" id="nie" value="nie">
+                      <label class="form-check-label" for="nie">NIE</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="documento" id="nif" value="nif">
+                      <label class="form-check-label" for="nif">NIF</label>
+                  </div>
+                  <div class="form-check form-check-inline ms-3">
+                      <input class="form-check-input" type="checkbox" id="notengo" value="notengo">
+                      <label class="form-check-label" for="notengo">No tengo o lo tengo caducado <a href=""><i class="bi bi-exclamation-triangle-fill ps-2" style="font-size: 1.2rem;color: #d93d67;"></i></a></label>
                   </div>
               </div>
+          </div>
         </div>
         
       </form>
@@ -360,10 +392,29 @@
                       </div>
                     </div>
                     <div class="row mt-5">
-                      <div class="col-12">
-                        <h4>Aviso</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nesciunt eos nulla culpa a quod. Quia, tempore aliquam ex doloribus explicabo, atque pariatur illo suscipit qui saepe eaque quasi? Hic. Voluptas, debitis aliquam. Ut ea aliquam nemo ratione est quaerat consequatur quidem ab nesciunt ipsa ex deleniti, recusandae voluptate omnis architecto, molestiae laboriosam rerum! Amet exercitationem quae dignissimos? Commodi, vitae! Ad voluptates laborum quia cupiditate, nostrum quod, dolore laudantium tempore provident sequi esse ex assumenda quam doloribus adipisci nobis modi ullam veniam quidem corporis. Alias id voluptates optio labore ab. Vitae iure incidunt quasi ratione maiores perspiciatis ducimus officia magni amet vero necessitatibus reiciendis corrupti mollitia quas repudiandae exercitationem atque, asperiores magnam sequi animi? Molestiae ad dolores in beatae distinctio? Sequi assumenda quaerat voluptatem repellendus rerum atque. Fugiat voluptas ratione ea doloremque pariatur iste obcaecati molestiae commodi, quaerat maxime porro nam vel labore dolorem id delectus aliquam nesciunt necessitatibus. Perferendis?</p>
+                      <div class="col-12 avisos">
+                        <h4><i class="bi bi-megaphone"></i>AVISO</h4>
+                        <strong>Garantias de cumplimiento</strong>
+                        <p>El inscrito entiende y acepta que la agencia 
+                          informará de las alergias/intolerancias/dietas a todos los proveedores del viaje, 
+                          pero pueden existir proveedores que no garanticen al 100% la trazabilidad de todos los alimentos. Además puede haber casos en los que exista un coste extra para cubrir la alergia/intolerancia/dieta indicada. Recordemos que el último responsable es el pasajero 
+                          y/o su tutor legal.</p>
                       </div>
+                      <div class="col-12 avisos">
+                        <h4><i class="bi bi-megaphone"></i>AVISO</h4>
+                        <strong>Familias de acogida</strong>
+                        <p>Algunas familias de acogida pueden acogerse a su derecho de declinar la 
+                          acogida de alumnos con de determinadas alergias/intolerancias, en caso de no poder garantizar su 
+                          seguridad alimentaria.</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 avisos">
+                        <h4><i class="bi bi-megaphone"></i>AVISO</h4>
+                        <div class="form-group pb-5">
+                            <label for="subirarchivo" class="form-label"><strong>Subir documento médico acreditativo alergia </strong><a href="">| Leer aviso legal</a></label>
+                            <input type="file" class="form-control" id="subirarchivo">
+                        </div>
+                    </div>
+                    
                     </div>
                   </div>
                 </div>
@@ -373,10 +424,10 @@
         </div>
         <div class="form-section row ps-5 pe-5">
           <div class="col-12 col-lg-6">
-              <div class="form-group pb-5">
+              <!-- <div class="form-group pb-5">
                   <label for="subirarchivo" class="form-label">Subir documento médico acreditativo alergia</label>
                   <input type="file" class="form-control" id="subirarchivo">
-              </div>
+              </div> -->
               <div class="form-group pb-5">
                 <label class="form-label">¿Sigues alguna dieta especifica?</label>
                 <div class="custom-radio-group">
@@ -474,13 +525,13 @@
       <div class="mt-2 toast-info">
           <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
               <div class="toast-header">
-                  <strong class="me-auto"><i class="bi bi-info-circle-fill" style="font-size: 1.5em;color: #d93d67;"></i></strong>
+                  <strong class="me-auto"><i class="bi bi-info-circle-fill" style="font-size: 1.5em;"></i></strong>
                   <small></small>
                   <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Cerrar"></button>
               </div>
-              <div class="toast-body">
-                <p>PASAJERO/A</p>
-                <p>Niño o adulto que viajará en el programa o ministay.</p>
+              <div class="toast-body" >
+                <p class="titulo-toast"><b>PASAJERO/A</b></p>
+                <p class="parrafo-toast">Niño o adulto que viajará en el programa o ministay.</p>
               </div>
           </div>
       </div>
@@ -488,6 +539,10 @@
 
   <!-- toast -->
   
+
+    <!-- <div class="pasajero ps-2 pt-3">
+      <h2 class="pt-3 pb-3"><b>Datos personales</b></h2>
+    </div> -->
     <form>
       <!-- Rol durante el viaje y Género -->
       <div class="form-section row ps-5 pe-5">
@@ -508,14 +563,26 @@
                   </div>
               </div>
           </div>
-          
+          <!-- <div class="col-md-6 pt-custom">
+              <label class="form-label">Género</label>
+              <div class="custom-radio-group">
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino" checked>
+                      <label class="form-check-label" for="masculino">Masculino</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="genero" id="femenino" value="femenino">
+                      <label class="form-check-label" for="femenino">Femenino</label>
+                  </div>
+              </div>
+          </div> -->
       </div>
 
       <!-- Nombre segunda fila-->
       <div class="form-section row ps-5 pe-5">
           <div class="col-md-4 pb-3">
               <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre">
+              <input type="text" class="form-control" id="nombre" value="Juan">
           </div>
           <div class="col-md-4 pb-3">
               <label for="primer-apellido" class="form-label">1er apellido</label>
@@ -574,7 +641,7 @@
   <div class="col-md-4">
       <label for="provincia" class="form-label">Provincia</label>
       <select class="form-select" id="provincia" name="provincia">
-          <!-- Options go here -->
+          <!-- Opciones select van aqui -->
       </select>
   </div>
   <div class="col-md-4">
@@ -621,7 +688,7 @@
                   </div>
               </div>
   
-              <!-- Second Column -->
+              <!-- Segunda columna -->
               <div class="col-md-6 mb-4">
                   <div class="mb-3">
                       <label class="form-label">¿Quieres alojarte con tu amigo o familiar?</label>
@@ -650,13 +717,13 @@
 
 </div>
 
-<!-- SEGUNDO FORMULARIO -->
+<!-- SEGUNDO FORMULARIO FIN -->
   <br>
   <br>
   <br>
   <div class="container botones-desplazamiento position-relative">
     <a href="index.html"><button class="btn btn-custom-color-izquierda btn-custom-size bottom-left"><i class="bi bi-caret-left pe-2"></i>ATRÁS</button></a>
-    <a href=""><button class="btn btn-custom-color-derecha btn-custom-size bottom-right">SEGUIR<i class="bi bi-caret-right ps-3"></i></button></a>
+    <a href="condiciones3.html"><button class="btn btn-custom-color-derecha btn-custom-size bottom-right">SEGUIR<i class="bi bi-caret-right ps-3"></i></button></a>
 </div>
 <br>
 <br>
@@ -697,7 +764,16 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     
     <script>
-      
+      /* flatpickr("#calendario", {
+            inline: true // Esto lo convierte en un calendario en línea
+        }); */
+        flatpickr("#calendario", {
+        inline: true,
+        onChange: function(selectedDates, dateStr, instance) {
+            instance.redraw();
+        }
+    });
+
 
     /* botones alergia */
     $(document).ready(function() {
@@ -711,8 +787,6 @@
             });
         });
 
-        
-        /* Toast */
         document.getElementById('toastIcon').addEventListener('click', function(event) {
         event.preventDefault();
         var toastEl = document.getElementById('liveToast');

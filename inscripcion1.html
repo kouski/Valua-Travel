@@ -222,63 +222,47 @@
             <!-- Fecha de nacimiento -->
             <div class="form-section row ps-5 pe-5">
                 <!-- Columna izquierda -->
-  <div class="col-md-6 mb-3">
-    <label for="fecha-nacimiento" class="form-label">Fecha de nacimiento</label>
-    <div id="calendario"></div>
-  </div>
-
-  <!-- Columna derecha -->
-  <div class="col-md-6">
-    <div class="mb-3 pb-3">
-      <label for="nacionalidad" class="form-label">Nacionalidad</label>
-      <select class="form-select" id="nacionalidad">
-        <option selected>Selecciona una opción</option>
-        <option value="es">España</option>
-        <option value="fr">Francia</option>
-        <option value="us">Estados Unidos</option>
-        <!-- Añade más opciones según sea necesario -->
-      </select>
-    </div>
-    <div class="mb-3 pb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email">
-    </div>
-    <div class="mb-3 pb-3">
-      <label for="telefono-movil" class="form-label">Teléfono móvil</label>
-      <input type="tel" class="form-control" id="telefono-movil">
-    </div>
-  </div>
-                
-            </div>
-
-        </form>
-        <div class="pasajero ps-2 pt-3">
-          <h2 class="pt-3 pb-3"><b>Documentación del viajero</b></h2>
-        </div>
-        <form>
-          <div class="form-section row ps-5 pe-5">
-            <!-- Label and radio buttons for document type -->
-            <div class="col-12">
-              <label class="form-label">Tipo de documento</label>
-              <div class="d-flex flex-wrap">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="documento" id="dni" value="dni" checked>
-                      <label class="form-check-label" for="dni">DNI</label>
+                <div class="col-md-6">
+                  <!-- First Row: Fecha de nacimiento -->
+                  <div class="mb-3">
+                      <label for="day" class="form-label">Fecha de nacimiento</label>
+                      <div class="d-flex">
+                          <input type="number" class="form-control me-2" id="day" placeholder="Día" min="1" max="31">
+                          <input type="number" class="form-control me-2" id="month" placeholder="Mes" min="1" max="12">
+                          <input type="number" class="form-control" id="year" placeholder="Año" min="1900" max="2024">
+                      </div>
                   </div>
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="documento" id="nie" value="nie">
-                      <label class="form-check-label" for="nie">NIE</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="documento" id="nif" value="nif">
-                      <label class="form-check-label" for="nif">NIF</label>
-                  </div>
-                  <div class="form-check form-check-inline ms-3">
-                      <input class="form-check-input" type="checkbox" id="notengo" value="notengo">
-                      <label class="form-check-label" for="notengo">No tengo</label>
+                  <!-- Second Row: Email -->
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Email">
                   </div>
               </div>
-          </div>
+              <!-- Second Column -->
+              <div class="col-md-6">
+                  <!-- First Row: Nacionalidad -->
+                  <div class="mb-3">
+                    <label for="nationality" class="form-label">Nacionalidad</label>
+                    <select class="form-select" id="nationality">
+                        <option selected>Seleccione su nacionalidad</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="peru">Perú</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="venezuela">Venezuela</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                  <!-- Second Row: Teléfono móvil -->
+                  <div class="mb-3">
+                      <label for="phone" class="form-label">Teléfono móvil</label>
+                      <input type="tel" class="form-control" id="phone" placeholder="Teléfono móvil">
+                  </div>
+              </div>
         </div>
         
       </form>

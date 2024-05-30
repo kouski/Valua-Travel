@@ -309,9 +309,10 @@ Modal.inicio
 
 .modal-header h5{
   color: var(--color-texto);
-  font-family: var(--font-family-body);
-  font-size: 1.875rem;
-  font-weight: 700;
+  font-family: var(--font-family-title);
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0px;
 }
 
 .alerta{

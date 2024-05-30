@@ -824,6 +824,20 @@ Pasajero.inicio
   background-color: var(--color-secundario);
 }
 
+.datos-personales{
+  position: relative;
+}
+.datos-personales__icon{
+  top: -20px;
+  right: -42px;
+  
+}
+
+.datos-personales .toast-info{
+  right: 0;
+  top:100%;
+}
+
 
 
 

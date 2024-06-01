@@ -871,6 +871,10 @@ Pasajero.inicio
   top:100%;
 }
 
+.toast .btn-close {
+  background-color: #fff; /* Color x para cerrar */
+  opacity: 1; 
+}
 
 
 
@@ -879,7 +883,6 @@ Pasajero.inicio
 .btn-back {
   background-color: var(--background-back-button);
   color: white;
-  border-right: 2px solid white;
   }
   .btn-next {
   background-color: var(--color-secundario);
@@ -890,7 +893,7 @@ Pasajero.inicio
   
   
   .custom-btn-height {
-  height: 80px; /* Ajusta esta altura según tus necesidades */
+  height: 80px; 
   border-radius: 0;
   }
   
@@ -910,6 +913,12 @@ Pasajero.inicio
   margin-left: 0;
   margin-right: 0;
   }
+
+  /* @media (max-width: 576px) {
+    .btn-back, .btn-next {
+        width: 100px;
+    }
+  } */
   
   /* datos personales */
   
@@ -1065,7 +1074,7 @@ letter-spacing: 0.2px;
 
 @media (max-width: 576px) {
   .btn-custom-size {
-      width: 200px; 
+      width: 150px; 
       height: 60px; 
       font-size: 1em;
   }

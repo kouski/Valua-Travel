@@ -781,12 +781,13 @@ Pasajero.inicio
   margin-top: 110px;
 }
 .pt-customsegundo {
-  margin-top: 110px;
+  margin-top: 110px !important;
 }
 
 .form-label {
   font-weight: bold;
 }
+
 
 /* .personales{
   background-color: var(--background-titulos-formulario);

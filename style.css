@@ -1076,7 +1076,7 @@ letter-spacing: 0.2px;
   .btn-custom-size {
       width: 150px; 
       height: 60px; 
-      font-size: 1em;
+      font-size: 1.2rem;
   }
 }
 

@@ -193,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-1">
+                <div class="col-md-6 mb-1 pt-customsegundo">
                     <label class="form-label">Género</label>
                     <div class="custom-radio-group">
                         <div class="form-check form-check-inline">
@@ -278,28 +278,47 @@
         </div>
         <form>
           <div class="form-section row ps-5 pe-5">
-            <!-- Label and radio buttons for document type -->
-            <div class="col-12">
-              <label class="form-label">Tipo de documento</label>
-              <div class="d-flex flex-wrap">
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="documento" id="dni" value="dni" checked>
-                      <label class="form-check-label" for="dni">DNI</label>
+
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                  <label class="form-label">Tipo de documento</label>
+                  <div class="d-flex flex-wrap">
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="documento" id="dni" value="dni" checked>
+                          <label class="form-check-label" for="dni">DNI</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="documento" id="nie" value="nie">
+                          <label class="form-check-label" for="nie">NIE</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="documento" id="passaporte" value="passaporte">
+                          <label class="form-check-label" for="passaporte">Passaporte</label>
+                      </div>
                   </div>
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="documento" id="nie" value="nie">
-                      <label class="form-check-label" for="nie">NIE</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="documento" id="nif" value="nif">
-                      <label class="form-check-label" for="nif">NIF</label>
-                  </div>
-                  <div class="form-check form-check-inline ms-3">
+              </div>
+              <div class="mb-3">
+                  <div class="form-check form-check-inline mt-3">
                       <input class="form-check-input" type="checkbox" id="notengo" value="notengo">
                       <label class="form-check-label" for="notengo">No tengo o lo tengo caducado</label>
                   </div>
               </div>
           </div>
+          <div class="col-12 col-md-6">
+              <div class="mb-3">
+                  <label for="numeroDocumento" class="form-label">Número de documento</label>
+                  <input type="number" class="form-control" id="numeroDocumento" placeholder="Número de documento">
+              </div>
+              <div class="mb-3">
+                <label for="day" class="form-label">Fecha de caducidad</label>
+                <div class="d-flex">
+                    <input type="number" class="form-control me-2" id="day" placeholder="Día" min="1" max="2">
+                    <input type="number" class="form-control me-2" id="month" placeholder="Mes" min="1" max="2">
+                    <input type="number" class="form-control" id="year" placeholder="Año" min="1900" max="">
+                </div>
+              </div>
+          </div>
+            
         </div>
         
       </form>
@@ -592,15 +611,15 @@
           <div class="row mb-3">
             <div class="col-md-3">
                 <label class="form-label">Tipo de documento</label>
-                <div class="form-check">
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="documento" id="nie" value="nie">
                     <label class="form-check-label" for="nie">NIE</label>
                 </div>
-                <div class="form-check">
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="documento" id="dni" value="dni">
                     <label class="form-check-label" for="dni">DNI</label>
                 </div>
-                <div class="form-check">
+                <div class="form-check ">
                     <input class="form-check-input" type="radio" name="documento" id="pasaporte" value="pasaporte">
                     <label class="form-check-label" for="pasaporte">Pasaporte</label>
                 </div>

@@ -1074,7 +1074,7 @@ letter-spacing: 0.2px;
 
 @media (max-width: 576px) {
   .btn-custom-size {
-      width: 150px; 
+      width: 120px; 
       height: 60px; 
       font-size: 1.2rem;
   }

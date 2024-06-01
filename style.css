@@ -680,6 +680,8 @@ Trip info.inicio
 
 .toast-info{
   position: absolute;
+  max-width: 100%;
+  padding: 0 1rem; /* Padding horizontal para que no toque los bordes de la pantalla */
 }
 
 

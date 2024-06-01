@@ -772,11 +772,14 @@ Pasajero.inicio
   gap: 15px;
 }
 .form-section {
-  padding: 20px;
+  padding: 10px;
 }
 
 .pt-custom {
-  margin-top: 80px;
+  margin-top: 110px;
+}
+.pt-customsegundo {
+  margin-top: 110px;
 }
 
 .form-label {

@@ -622,6 +622,25 @@ Titulo.inicio
   letter-spacing: 0.3px;
 }
 
+.progreso .bienvenida h2{
+  padding-left: 0;
+}
+
+.bienvenida {
+  text-align: center; /* Centra el texto */
+  padding: 0 15px; /* Añade padding para evitar que el texto toque los bordes */
+}
+
+@media (max-width: 576px) { /* Ajustes para pantallas pequeñas */
+  .bienvenida {
+    padding: 0 10px; /* Reduce el padding en pantallas más pequeñas */
+  }
+
+  .bienvenida p, .bienvenida h2 {
+    word-wrap: break-word; /* Permite que las palabras se rompan si son demasiado largas */
+  }
+}
+
 
 /*-------------------------------------------*\ 
 Titulo.fin

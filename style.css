@@ -622,16 +622,24 @@ Titulo.inicio
   letter-spacing: 0.3px;
 }
 
+.titulo-datos-personales{
+  color: var(--color-titulo);
+  font-family: var(--font-family-title);
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 0.3px;
+}
+
 .progreso .bienvenida h2{
   padding-left: 0;
 }
 
 .bienvenida {
-  text-align: center; /* Centra el texto */
+  text-align: center; 
   padding: 0 15px; /* Añade padding para evitar que el texto toque los bordes */
 }
 
-@media (max-width: 576px) { /* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) { 
   .bienvenida {
     padding: 0 10px; /* Reduce el padding en pantallas más pequeñas */
   }

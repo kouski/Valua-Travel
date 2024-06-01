@@ -949,6 +949,15 @@ Pasajero.inicio
   }
 }
 
+.datos-personales{
+  position: relative;
+}
+.datos-personales__icon{
+  top: -20px;
+  right: -42px;
+  
+}
+
   
   
   

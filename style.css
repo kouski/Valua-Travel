@@ -989,6 +989,10 @@ Pasajero.inicio
   .avisos {
       padding: 2em 10px;
   }
+
+  .pt-customsegundo {
+    margin-top: 40px;
+  }
 }
 
 .datos-personales{
@@ -998,6 +1002,20 @@ Pasajero.inicio
   top: -10px;
   right: -30px;
   
+}
+
+#altura, #peso, #numeroPie, #nivel-deportivo, #day, #month, #year{
+  width: 100%;
+  max-width: 100px;
+}
+
+#phone, #numeroDocumento, #movil,#codigopostal {
+  width: 100%;
+  max-width: 200px;
+}
+#nationality, #email {
+  width: 100%;
+  max-width: 317px;
 }
 
 

@@ -235,7 +235,7 @@
                     <div class="d-flex">
                         <input type="number" class="form-control me-2" id="day" placeholder="Día" min="1" max="31">
                         <input type="number" class="form-control me-2" id="month" placeholder="Mes" min="1" max="12">
-                        <input type="number" class="form-control" id="year" placeholder="Año" min="1900" max="2024">
+                        <input type="number" class="form-control" id="year" placeholder="Año" min="1900">
                     </div>
                 </div>
                 <!-- Second Row: Email -->
@@ -292,8 +292,8 @@
                           <label class="form-check-label" for="nie">NIE</label>
                       </div>
                       <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="documento" id="passaporte" value="passaporte">
-                          <label class="form-check-label" for="passaporte">Passaporte</label>
+                          <input class="form-check-input" type="radio" name="documento" id="pasaporte" value="pasaporte">
+                          <label class="form-check-label" for="pasaporte">Pasaporte</label>
                       </div>
                   </div>
               </div>
@@ -307,13 +307,13 @@
           <div class="col-12 col-md-6">
               <div class="mb-3">
                   <label for="numeroDocumento" class="form-label">Número de documento</label>
-                  <input type="number" class="form-control" id="numeroDocumento" placeholder="Número de documento">
+                  <input type="text" class="form-control" id="numeroDocumento" maxlength="9">
               </div>
               <div class="mb-3">
                 <label for="day" class="form-label">Fecha de caducidad</label>
                 <div class="d-flex">
-                    <input type="number" class="form-control me-2" id="day" placeholder="Día" min="1" max="2">
-                    <input type="number" class="form-control me-2" id="month" placeholder="Mes" min="1" max="2">
+                    <input type="number" class="form-control me-2" id="day" placeholder="Día" min="1" max="31">
+                    <input type="number" class="form-control me-2" id="month" placeholder="Mes" min="1" max="12">
                     <input type="number" class="form-control" id="year" placeholder="Año" min="1900" max="">
                 </div>
               </div>
@@ -480,7 +480,8 @@
               </div>
               <div class="form-group pb-5">
                 <label class="form-label">¿Cual?</label>
-                  <input type="text" class="form-control input-height" id="cual">
+                
+                  <textarea  class="form-control input-height" id="cual"></textarea>
               </div>
               
           </div>
@@ -640,8 +641,8 @@
 <div class="row mb-3">
   
   <div class="col-md-4">
-      <label for="ciudad" class="form-label">Teléfono móvil</label>
-      <input type="number" class="form-control" id="movil" name="movil">
+      <label for="movil" class="form-label">Teléfono móvil</label>
+      <input type="number" class="form-control" id="movil" name="movil" maxlength="12">
   </div>
   <div class="col-md-4">
     <label for="provincia" class="form-label">Provincia</label>
@@ -650,20 +651,20 @@
     </select>
 </div>
   <div class="col-md-4">
-      <label for="codigoPostal" class="form-label">Código postal</label>
-      <input type="text" class="form-control" id="codigoPostal" maxlength="5" name="codigoPostal">
+      <label for="ciudad" class="form-label">Ciudad</label>
+      <select class="form-select" id="ciudad" name="ciudad"></select>
   </div>
 </div>
 
 <!--  Quinta fila -->
  <div class="row mb-3">
   <div class="col-md-6">
-      <label for="telefono" class="form-label">Teléfono móvil</label>
-      <input type="text" class="form-control" id="telefono" maxlength="12" name="telefono">
+      <label for="calle" class="form-label">Calle</label>
+      <input type="text" class="form-control" id="calle"  name="calle">
   </div>
   <div class="col-md-6">
-      <label for="calle" class="form-label">Calle</label>
-      <input type="text" class="form-control" id="calle" name="calle">
+      <label for="codigopostal" class="form-label">Código postal</label>
+      <input type="number" class="form-control" id="codigopostal" name="codigopostal" maxlength="5">
   </div>
 </div>
 

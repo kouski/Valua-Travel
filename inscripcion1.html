@@ -301,6 +301,9 @@
                   <div class="form-check form-check-inline mt-3">
                       <input class="form-check-input" type="checkbox" id="notengo" value="notengo">
                       <label class="form-check-label" for="notengo">No tengo o lo tengo caducado</label>
+                      <div class="alert alert-warning d-none" id="alertasindocumento">
+                        <strong>ALERTA</strong><br>Podrás actualizar tus datos en MI INSCRIPCIÓN, des de la página de inicio. Fecha límite: 1 mes antes de la salida del viaje”.
+                      </div>
                   </div>
               </div>
           </div>
@@ -803,6 +806,16 @@
         var toast = new bootstrap.Toast(toastEl);
         toast.show();
     });
+
+    $(document).ready(function() {
+    $('#notengo').change(function() {
+        if(this.checked) {
+            $('#alertasindocumento').removeClass('d-none');
+        } else {
+            $('#alertasindocumento').addClass('d-none');
+        }
+    });
+});
 
     </script>
     

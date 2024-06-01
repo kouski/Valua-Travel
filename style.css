@@ -1026,9 +1026,12 @@ Pasajero.inicio
   max-width: 317px;
 }
 
-
+/* Alerta sin documento o caducado */
   
-  
+  #alertasindocumento{
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+  }
   
   /*-------------------------------------------*\ 
   Pasajero.fin

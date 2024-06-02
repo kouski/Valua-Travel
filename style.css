@@ -778,10 +778,10 @@ Pasajero.inicio
 }
 
 .pt-custom {
-  margin-top: 110px;
+  margin-top: 40px;
 }
 .pt-customsegundo {
-  margin-top: 110px !important;
+  margin-top: 40px;
 }
 
 .form-label {
@@ -876,6 +876,8 @@ Pasajero.inicio
   background-color: #fff; /* Color x para cerrar */
   opacity: 1; 
 }
+
+
 
 
 

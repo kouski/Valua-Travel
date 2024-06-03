@@ -1333,14 +1333,10 @@ letter-spacing: 0.2px;
 
 
   /*-------------------------------------------*\ 
-  *********PAGINA CONDICIONES3******************
+  *********PAGINA CONDICIONES3.INICIO************
   \*-------------------------------------------*/
 
   
-   
-      
- 
-/* ------------nuevo---------------- */
 
 .condiciones-contrato h5 {
   color: #d0021b;
@@ -1373,8 +1369,12 @@ letter-spacing: 0.2px;
   margin-right: 10px;
 }
 .btn-download {
-  background-color: #d0021b;
-  color: #fff;
+  background-color: var(--color-secundario);
+  color: var(--background-acceso);
+  font-family: var(--font-family-title);
+  font-weight: bold;
+  letter-spacing: 0px;
+  font-size: 0.5rem;
 }
 @media (max-width: 768px) {
   .consent {
@@ -1394,6 +1394,33 @@ letter-spacing: 0.2px;
       max-width: 200px;
   }
 }
+
+.titulo-consentimiento{
+  color: var(--background-back-button);
+  font-family: var(--font-family-title);
+  font-size: 0.75rem;
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+
+}
+
+.aceptar-terminos{
+  color: var(--color-titulo);
+  font-family: var(--font-family-body);
+  font-size: 0.5rem;
+  letter-spacing: -0.04px;
+
+}
+
+
+
+
+
+
+
+/*-------------------------------------------*\ 
+  *********PAGINA CONDICIONES3.FIN************
+\*-------------------------------------------*/
 
 
 

@@ -1349,12 +1349,20 @@ letter-spacing: 0.2px;
   font-weight: bold;
 }
 .main-content {
-  background-color: #fff;
+  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin-bottom: 20px;
 }
+
+.embed-container {
+  max-height: 300px; /* Adjust the height as needed */
+  overflow-y: scroll;
+  padding-right: 15px; /* Add some padding to avoid content hiding behind scrollbar */
+}
+
+
 .consent {
   margin-top: 20px;
 }

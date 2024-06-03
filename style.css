@@ -1357,9 +1357,9 @@ letter-spacing: 0.2px;
 }
 
 .embed-container {
-  max-height: 300px; /* Adjust the height as needed */
-  overflow-y: scroll;
-  padding-right: 15px; /* Add some padding to avoid content hiding behind scrollbar */
+  max-height: 300px; /* Ajustar altura que empieza el scroll */
+  overflow-y: scroll;/* Se puede poner también automatica con auto */
+  padding-right: 15px; /* Padding para que no se monte en la barra el texto */
 }
 
 
@@ -1391,6 +1391,7 @@ letter-spacing: 0.2px;
   .btn-download {
       margin-top: 20px;
       margin-left: 20px;
+      max-width: 400px;
   }
 }
 

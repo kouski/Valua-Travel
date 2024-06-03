@@ -1162,6 +1162,7 @@ letter-spacing: 0.2px;
     width: 100%;
     height: auto;
     border-radius: 0 5px 5px 0;
+    max-height: 170px;
   }
   
   .image-section {
@@ -1223,7 +1224,23 @@ letter-spacing: 0.2px;
       padding-left: 0px;
     }
   
-    
+  }
+
+  /* Quitar padding al ultimo parrafo */
+
+  #div-datos-legales{
+    padding-bottom: 0px !important;
+    padding-left: 22px !important;
+    padding-right: 23px !important;
+  }
+
+  .estancias .text-section{
+    padding-left: 9em;
+    padding-right: 4em;
+  }
+  .estancias .text-section p{
+    padding-left: 1.1em;
+    padding-right: 4em;
   }
 
 

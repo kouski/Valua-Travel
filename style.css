@@ -1136,7 +1136,7 @@ letter-spacing: 0.2px;
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-    padding-left: 135px;
+    padding-left: 90px;
     padding-right: 80px;
   }
   
@@ -1148,7 +1148,7 @@ letter-spacing: 0.2px;
   .text-section {
     background-color: #007bff;
     color: white;
-    padding: 20px 25px 20px 150px;
+    padding: 20px 25px 20px 110px;
   }
   .text-section h5 {
     font-size: 1.25rem;
@@ -1160,27 +1160,23 @@ letter-spacing: 0.2px;
   }
   .image-section img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 0 5px 5px 0;
-    max-height: 170px;
+    max-height: 200px;
+    margin: 0;
   }
   
   .image-section {
     padding: 0; /* Ensure no padding is present */
     margin: 0; /* Ensure no margins are present */
   }
-  .image-section img {
-    width: 100%;
-    height: auto;
-    border-radius: 0 5px 5px 0;
-    margin: 0; /* Ensure no margins are present */
-  }
+  
   
   .texto-legal{
     margin-top: 40px;
     margin-bottom: 80px;
-    padding-right: 145px;
-    padding-left: 102px;
+    padding-right: 110px;
+    padding-left: 80px;
   }
   
   .texto-legal p{
@@ -1235,12 +1231,19 @@ letter-spacing: 0.2px;
   }
 
   .estancias .text-section{
-    padding-left: 9em;
+    padding-left: 6.5em;
     padding-right: 4em;
   }
   .estancias .text-section p{
     padding-left: 1.1em;
-    padding-right: 4em;
+    padding-right: 2em;
+  }
+
+  @media (max-width: 576px) {
+    .estancias .text-section{
+      padding-left: 3.5em;
+      padding-right: 3em;
+    }
   }
 
 

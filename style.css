@@ -1182,6 +1182,10 @@ letter-spacing: 0.2px;
   .texto-legal p{
     text-align: left;
   }
+  .texto-legal a{
+    color: var(--color-secundario);
+    text-decoration: none;
+  }
   
   .texto-legal p, .checkbox-label span {
     color: var(--color-titulo);

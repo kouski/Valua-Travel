@@ -1180,7 +1180,7 @@ letter-spacing: 0.2px;
   }
   
   .texto-legal p{
-    text-align: justify;
+    text-align: left;
   }
   
   .texto-legal p, .checkbox-label span {
@@ -1192,8 +1192,21 @@ letter-spacing: 0.2px;
   }
   
   .checkbox-label label{
-    text-align: justify;
+    text-align: left;
     padding-right: 70px;
+  }
+
+  #estancias-titulo{
+    font-family: var(--font-family-title);
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: -0.75px;
+  }
+  #estancias-parrafo{
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0px;
   }
   
   .titulo-legal{

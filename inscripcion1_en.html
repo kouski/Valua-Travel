@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valua Travel register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="inscripcion_1.css"> -->
+    
+</head>
+<body style="background-color: #EBEBEB;">
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="https://valuatravel.com/" style="font-size: 0.9rem;">
+              <img
+                src="images/VALUA_Travel_horiz_white.png"
+                alt="Logo"
+                width="270"
+                height="57"
+                class="d-inline-block align-text-center"
+              />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon custom-toggler-icon" style="font-size: 0.75rem;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#"></a>
+                </li> -->
+                
+                <li class="nav-item ms-3">
+                  <a class="nav-link text-white" href="https://valuatravel.com/contacte/">CONTACT</a>
+                </li>
+                <li class="nav-item ms-3 pb-2">
+                  <a class="nav-link text-white" href="https://valuatravelsandbox.powerappsportals.com/SignIn?ReturnUrl=%2F">PORTAL VALUA</a>
+                </li>
+                <!-- <li class="nav-item ms-3">
+                  <select class="form-select w-auto me-auto" aria-label="Default select example" id="languageSelect">
+                      <option value="index.html" selected>Catalán</option>
+                      <option value="index_copy.html">Castellano</option>
+                    </select> 
+                </li> -->
+                
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Navbar -->
+
+      <!-- Progreso inscripcion -->
+<section class="progreso">
+      <div class="container mt-5 progreso">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-4 bienvenida mb-2 mb-lg-0">
+                <p>WELCOME TO THE</p>
+                <h2>REGISTRATION AREA</h2>
+            </div>
+            <div class="col-12 col-lg-8">
+                <div class="progress-container">
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 14.28%"></div>
+                    </div>
+                    <div class="steps d-flex justify-content-between">
+                        <div class="step completed">01</div>
+                        <div class="step">02</div>
+                        <div class="step">03</div>
+                        <div class="step">04</div>
+                        <div class="step">05</div>
+                        <div class="step">06</div>
+                        <div class="step">07</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+
+      <!-- Progreso inscripcion -->
+
+
+
+      <!-- Titulo -->
+
+      <section class="titulo pb-3">
+        <h2 class="text-center"><span><b>01 /</b></span><b> TRAVELER DATA</b></h2>
+      </section>
+      <!-- Titulo -->
+
+      <!-- Tu viaje -->
+      
+
+      <div class="container" >
+        <h2 class="pt-5 tuviaje"><i class="bi bi-geo-alt-fill"></i>YOUR TRIP</h2>
+        <div class="trip-info">
+            
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <p><span class="label">Itinerary:</span> Paris</p>
+                </div>
+                <div class="col-12 col-md-4 column">
+                    <p><span class="label">Departure:</span> 22/05/2024</p>
+    
+                </div>
+                <div class="col-12 col-md-4">
+                    <p><span class="label">Arrival:</span> 29/05/2024</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                    <p><span class="label">Client:</span> Escuela Pía de Tàrrega</p>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-end">
+                    <p><span class="label">Coordinator:</span> Gonzalo Portas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- pasajero1 -->
+        <div class="container container-viaje fondo-pasajero mb-5" style="padding-top: 0px; padding-bottom: 0px; position: relative;">
+          <!-- toast -->
+
+          
+          <div class="tab-header pasajero ps-5">
+            
+            <!-- <a href="#"><i class="bi bi-info-circle-fill position-absolute top-3 start-0 m-3 pt-3 " style="font-size: 1.5em;top: -0.4em;color: #d93d67;padding-left: 18em;" id="toastIcon"></i></a> -->
+            <div class="parrafo pt-3 ms-3 datos-personales">
+              <b class="titulo-datos-personales">TRAVELER DATA</b>
+              <i class="datos-personales__icon bi bi-info-circle-fill position-absolute" style="font-size: 1.5em;color: #d93d67;cursor: pointer;" id="toastIcon"></i>
+            </div>         
+            <!-- <i class="bi bi-person-circle mb-3" style="font-size: 1.8rem;"></i>
+            <h1><b>PASAJERO/A</b></h1><p class="pt-3 ms-3 mb-4"><b>DATOS PERSONALES</b></p> -->
+        </div>
+        
+        <div class="container mt-5">
+            
+            <div class="mt-2 toast-info">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                    <div class="toast-header">
+                        <strong class="me-auto"><i class="bi bi-info-circle-fill" style="font-size: 1.5em;color: #d93d67;"></i></strong>
+                        <small></small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="toast-body">
+                      <p class="titulo-toast">TRAVELER</p>
+                      <p class="parrafo-toast">Child or adult who will travel on the program or ministay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- toast -->
+        
+      
+          <!-- <div class="pasajero ps-2 pt-3">
+            <h2 class="pt-3 pb-3"><b>Datos personales</b></h2>
+          </div> -->
+          <form>
+            <!-- Rol durante el viaje y Género -->
+            <div class="form-section row ps-5 pt-5 pe-5">
+                <div class="col-md-6 mb-1 pt-custom">
+                    <label class="form-label">Role during the trip</label>
+                    <div class="custom-radio-group">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="rol" id="pasajero" value="pasajero" checked>
+                            <label class="form-check-label" for="pasajero">Student</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="rol" id="organizador" value="organizador">
+                            <label class="form-check-label" for="organizador">Accompanying teacher</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="rol" id="guia" value="guia">
+                            <label class="form-check-label" for="guia">Guide</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-1 pt-customsegundo">
+                    <label class="form-label">Genre</label>
+                    <div class="custom-radio-group">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino" checked>
+                            <label class="form-check-label" for="masculino">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="genero" id="femenino" value="femenino">
+                            <label class="form-check-label" for="femenino">Female</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nombre -->
+            <div class="form-section row ps-5 pe-5">
+                <div class="col-md-4 pb-3">
+                    <label for="nombre" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="col-md-4 pb-3">
+                    <label for="primer-apellido" class="form-label">Surname</label>
+                    <input type="text" class="form-control" id="primer-apellido">
+                </div>
+                <div class="col-md-4 pb-3">
+                    <label for="segundo-apellido" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="segundo-apellido">
+                </div>
+            </div>
+
+            <!-- Fecha de nacimiento -->
+          
+            <div class="form-section row ps-5 pe-5"> 
+
+              <div class="col-12 col-sm-6">
+                <!-- First Row: Fecha de nacimiento -->
+                <div class="mb-3">
+                    <label for="day" class="form-label">Birthdate</label>
+                    <div class="d-flex">
+                        <input type="number" class="form-control me-2" id="day" placeholder="Day" min="1" max="31">
+                        <input type="number" class="form-control me-2" id="month" placeholder="Month" min="1" max="12">
+                        <input type="number" class="form-control" id="year" placeholder="Year" min="1900">
+                    </div>
+                </div>
+                <!-- Second Row: Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+            </div>
+            <!-- Second Column -->
+            <div class="col-12 col-sm-6">
+                <!-- First Row: Nacionalidad -->
+                <div class="mb-3">
+                  <label for="nationality" class="form-label">Nacionality</label>
+                  <select class="form-select" id="nationality">
+                      <option selected>Select your nacionality</option>
+                      <option value="argentina">Argentina</option>
+                      <option value="bolivia">Bolivia</option>
+                      <option value="chile">Chile</option>
+                      <option value="colombia">Colombia</option>
+                      <option value="ecuador">Ecuador</option>
+                      <option value="paraguay">Paraguay</option>
+                      <option value="peru">Perú</option>
+                      <option value="uruguay">Uruguay</option>
+                      <option value="venezuela">Venezuela</option>
+                      <!-- Add more options as needed -->
+                  </select>
+              </div>
+                <!-- Second Row: Teléfono móvil -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Mobile phone</label>
+                    <input type="tel" class="form-control" maxlength="12" id="phone">
+                </div>
+            </div>
+                 
+            </div>
+
+        </form>
+        <div class="pasajero ps-2 pt-3">
+          <h2 class="pt-3 pb-3"><b>TRAVELER DOCUMENTATION</b></h2>
+        </div>
+        <form>
+          <div class="form-section row ps-5 pe-5">
+
+            <div class="col-12 col-sm-6 ">
+              <div class="mb-3">
+                  <label class="form-label">Type of documents</label>
+                  <div class="d-flex flex-wrap">
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="documento" id="dni" value="dni" checked>
+                          <label class="form-check-label" for="dni">ID</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="documento" id="nie" value="nie">
+                          <label class="form-check-label" for="nie">NIE</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="documento" id="pasaporte" value="pasaporte">
+                          <label class="form-check-label" for="pasaporte">Passport</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <div class="form-check form-check-inline mt-3">
+                      <input class="form-check-input" type="checkbox" id="notengo" value="notengo">
+                      <label class="form-check-label" for="notengo">I don't have it or I have it expired</label>
+                      <div class="alert alert-warning d-none" id="alertasindocumento">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <strong>ALERT</strong><br>You can update your information in MY REGISTRATION, from the home page. Deadline: 1 month before trip departure”.
+                      </div>
+                      
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-sm-6">
+              <div class="mb-3">
+                  <label for="numeroDocumento" class="form-label">Document number</label>
+                  <input type="text" class="form-control" id="numeroDocumento" maxlength="9">
+              </div>
+              <div class="mb-3">
+                <label for="day" class="form-label">Date of Expiry</label>
+                <div class="d-flex">
+                    <input type="number" class="form-control me-2" id="day" placeholder="Day" min="1" max="31">
+                    <input type="number" class="form-control me-2" id="month" placeholder="Month" min="1" max="12">
+                    <input type="number" class="form-control" id="year" placeholder="Year" min="1900" max="">
+                </div>
+              </div>
+          </div>
+            
+        </div>
+        
+      </form>
+      <!-- Necesidades del viajero -->
+        <form>
+          <div class="pasajero ps-2 pt-3">
+            <h2 class="pt-3 pb-3"><b>SPECIAL NEEDS OF THE TRAVELER</b></h2>
+          </div>
+
+          <div class="form-section row ps-5 pe-5">
+            <div class="col-12">
+              <label class="form-label">Do you have any intolerance/allergy?</label>
+              <div class="container py-1">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="radio1" id="si" value="si">
+                    <label class="form-check-label" for="si">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="radio1" id="no" value="no">
+                    <label class="form-check-label" for="no">No</label>
+                </div>
+                <div id="extraRows" style="display: none;">
+                  <div class="container-fluid">
+                    <!-- Aquí van las filas adicionales de radio buttons -->
+                    <div class="row mt-5">
+                      <div class="col-6 col-md-3">
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="intolerancias" id="lactosa-1" value="lactosa">
+                              <label class="form-check-label" for="lactosa-1">Lactosa</label>
+                          </div>
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="intolerancias" id="gluten-1" value="gluten">
+                              <label class="form-check-label" for="gluten-1">Gluten</label>
+                          </div>
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="alergias" id="melocoton-1" value="melocoton">
+                              <label class="form-check-label" for="melocoton-1">Melocotón</label>
+                          </div>
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="alergias" id="perros-1" value="perros">
+                              <label class="form-check-label" for="perros-1">Perros</label>
+                          </div>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="intolerancias" id="lactosa-2" value="lactosa">
+                              <label class="form-check-label" for="lactosa-2">Lactosa</label>
+                          </div>
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="intolerancias" id="gluten-2" value="gluten">
+                              <label class="form-check-label" for="gluten-2">Gluten</label>
+                          </div>
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="alergias" id="melocoton-2" value="melocoton">
+                              <label class="form-check-label" for="melocoton-2">Melocotón</label>
+                          </div>
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="alergias" id="perros-2" value="perros">
+                              <label class="form-check-label" for="perros-2">Perros</label>
+                          </div>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="intolerancias" id="lactosa-3" value="lactosa">
+                              <label class="form-check-label" for="lactosa-3">Lactosa</label>
+                          </div>
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="intolerancias" id="gluten-3" value="gluten">
+                              <label class="form-check-label" for="gluten-3">Gluten</label>
+                          </div>
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="alergias" id="melocoton-3" value="melocoton">
+                              <label class="form-check-label" for="melocoton-3">Melocotón</label>
+                          </div>
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="alergias" id="perros-3" value="perros">
+                              <label class="form-check-label" for="perros-3">Perros</label>
+                          </div>
+                      </div>
+                      <div class="col-6 col-md-3">
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="intolerancias" id="lactosa-4" value="lactosa">
+                              <label class="form-check-label" for="lactosa-4">Lactosa</label>
+                          </div>
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="intolerancias" id="gluten-4" value="gluten">
+                              <label class="form-check-label" for="gluten-4">Gluten</label>
+                          </div>
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="alergias" id="melocoton-4" value="melocoton">
+                              <label class="form-check-label" for="melocoton-4">Melocotón</label>
+                          </div>
+                          <div class="form-check extra-row">
+                              <input class="form-check-input" type="checkbox" name="alergias" id="perros-4" value="perros">
+                              <label class="form-check-label" for="perros-4">Perros</label>
+                          </div>
+                      </div>
+                  </div>
+
+                    <!-- ----------------Avisos------------------------------ -->
+                    <div class="row mt-5">
+                      <div class="col-12 avisos">
+                        <h4><i class="bi bi-megaphone"></i>WARNING</h4>
+                        <strong>Compliance guarantees</strong>
+                        <p>The registrant understands and accepts that the agency
+                            will inform all travel suppliers of allergies/intolerances/diets,
+                            but there may be suppliers that do not guarantee 100% traceability of all foods. In addition, there may be cases in which there is an extra cost to cover the allergy/intolerance/diet indicated. Let us remember that the last person responsible is the passenger.
+                            and/or her legal guardian.</p>
+                      </div>
+                      <div class="col-12 avisos d-none">
+                        <h4><i class="bi bi-megaphone"></i>WARNING</h4>
+                        <strong>Host families</strong>
+                        <p>Some host families may avail themselves of their right to decline
+                            reception of students with certain allergies/intolerances, in case of not being able to guarantee their
+                            food safety.</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 avisos d-none">
+                        <h4><i class="bi bi-megaphone"></i>WARNING</h4>
+                        <div class="form-group pb-5">
+                            <label for="subirarchivo" class="form-label"><strong>Upload medical document proving allergy </strong><a href="">| Leer aviso legal</a></label>
+                            <input type="file" class="form-control" id="subirarchivo">
+                        </div>
+                    </div>
+                    
+                    </div>
+                  </div>
+                </div>
+                
+                    </div>
+          </div>
+        </div>
+        <div class="form-section row ps-5 pe-5">
+          <div class="col-12 col-lg-6">
+              <!-- <div class="form-group pb-5">
+                  <label for="subirarchivo" class="form-label">Subir documento médico acreditativo alergia</label>
+                  <input type="file" class="form-control" id="subirarchivo">
+              </div> -->
+              <div class="form-group pb-5">
+                <label class="form-label">Do you follow any specific diet?</label>
+                <div class="custom-radio-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="dieta" id="dieta-si" value="si" checked>
+                        <label class="form-check-label" for="dieta-si">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="dieta" id="dieta-no" value="no">
+                        <label class="form-check-label" for="dieta-no">No</label>
+                    </div>
+                </div>
+              </div>
+              <div class="form-group pb-5">
+                <label class="form-label">Specific physical, psychological or medical impediments?</label>
+                <div class="custom-radio-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="impedimento" id="impedimento-si" value="si" checked>
+                        <label class="form-check-label" for="impedimento-si">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="impedimento" id="impedimento-no" value="no">
+                        <label class="form-check-label" for="impedimento-no">No</label>
+                    </div>
+                </div>
+              </div>
+              <div class="form-group pb-5">
+                <label class="form-label">Which one?</label>
+                
+                  <textarea  class="form-control input-height" id="cual" rows="5"></textarea>
+              </div>
+              
+          </div>
+      </div>
+      </form>
+      <div class="container">
+        <form>
+            <div class="pasajero ps-2 pt-3">
+                <h2 class="pt-3 pb-3"><b>SPORTS ASPECTS</b></h2>
+            </div>
+            
+            <div class="form-section row ps-5 pe-5 pb-5">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6 col-md-3 col-lg-3 mb-3">
+                            <label for="altura" class="form-label">Height in cm</label>
+                            <input class="form-control" type="number" step="1" min="100" max="200" id="altura" />
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-3">
+                            <label for="numeroPie" class="form-label">Foot size</label>
+                            <input class="form-control" type="number" step="1" min="10" max="50" id="numeroPie" />
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-3">
+                            <label for="peso" class="form-label">Weight in kgs</label>
+                            <input class="form-control" type="number" step="1" min="10" max="200" id="peso" />
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 mb-3">
+                            <label for="nivel-deportivo" class="form-label">Sports level</label>
+                            <select id="nivel-deportivo" class="form-select">
+                                <option selected>Choose...</option>
+                                <option value="alto">High</option>
+                                <option value="medio">Medium</option>
+                                <option value="bajo">Low</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+      
+  
+  </div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+  <!-- SEGUNDO FORMULARIO -->
+  <div class="container container-viaje fondo-pasajero mb-5" style="padding-top: 0px; padding-bottom: 0px; position: relative;">
+    <!-- toast -->
+    <div class="tab-header pasajero ps-5">
+      <!-- Ícono que activará el toast -->
+      <!-- <a href="#"><i class="bi bi-info-circle-fill position-absolute top-28 m-3 pt-3 " style="font-size: 1.5em;top: -0.4em;color: #d93d67;padding-left: 18em;right: 17.4em;" id="toastIcon2"></i></a> -->
+      <div class="parrafo pt-3 ms-3 datos-personales">
+        <b class="titulo-datos-personales">DATA RESPONSIBLE FOR THE MINOR</b>
+        <i class="bi bi-info-circle-fill position-absolute" style="font-size: 1.5em;color: #d93d67; cursor: pointer;top: -10px;right: -30px;" id="toastIcon2"></i>
+      </div> 
+      <!-- <i class="bi bi-people-fill mb-3" style="font-size: 1.8rem;"></i>
+      <h1><b>PADRE /MADRE / TUTOR LEGAL</b></h1><p class="pt-3 ms-3 mb-4"><b>DATOS DEL RESPONSABLE DEL MENOR</b></p> -->
+  </div>
+  
+  <div class="container mt-5">
+      <!-- Toast -->
+      <div class="mt-2 toast-info">
+          <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+              <div class="toast-header">
+                  <strong class="me-auto"><i class="bi bi-info-circle-fill" style="font-size: 1.5em;"></i></strong>
+                  <small></small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+              </div>
+              <div class="toast-body" >
+                <p class="titulo-toast"><b>MOTHER/FATHER/LEGAL GUARDIAN</b></p>
+                <p class="parrafo-toast">Mother, Father or Legal Guardian who will travel in the program or ministay.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- toast -->
+  
+    <form>
+      <!-- Rol durante el viaje y Género -->
+      <div class="form-section row ps-5 pt-5 pe-5">
+          <div class="col-md-6 mb-3 pt-customsegundo">
+              <label class="form-label">Relationship with the traveler</label>
+              <div class="custom-radio-group">
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rol" id="pasajero" value="pasajero" checked>
+                      <label class="form-check-label" for="pasajero">Mother</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rol" id="organizador" value="organizador">
+                      <label class="form-check-label" for="organizador">Father</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rol" id="guia" value="guia">
+                      <label class="form-check-label" for="guia">Legal Guardian</label>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+
+      <!-- Nombre segunda fila-->
+      <div class="form-section row ps-5 pe-5">
+          <div class="col-md-4 pb-3">
+              <label for="nombre" class="form-label">Name</label>
+              <input type="text" class="form-control" id="nombre">
+          </div>
+          <div class="col-md-4 pb-3">
+              <label for="primer-apellido" class="form-label">Surname</label>
+              <input type="text" class="form-control" id="primer-apellido">
+          </div>
+          <div class="col-md-4 pb-3">
+              <label for="segundo-apellido" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="segundo-apellido">
+          </div>
+      </div>
+
+      <!-- Tipo de documento tercera fila -->
+      <div class="form-section row ps-5 pe-5">
+          <!-- Columna izquierda -->
+          <div class="row mb-3">
+            <div class="col-md-4 mb-3">
+                <label class="form-label d-block">Type of documents</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="documento" id="nie" value="nie">
+                    <label class="form-check-label" for="nie">ID</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="documento" id="dni" value="dni">
+                    <label class="form-check-label" for="dni">NIE</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="documento" id="pasaporte" value="pasaporte">
+                    <label class="form-check-label" for="pasaporte">Passport</label>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="numeroDocumento" class="form-label">Document number</label>
+                <input type="text" class="form-control" id="numeroDocumento" maxlength="9" name="numeroDocumento">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="nacionalidad" class="form-label">Nacionality</label>
+                <select class="form-select" id="nacionalidad" name="nacionalidad">
+                    <!-- Options go here -->
+                </select>
+            </div>
+        </div>
+
+<!-- Cuarta fila -->
+<div class="row mb-3">
+  
+  <div class="col-md-4 mb-3">
+      <label for="movil" class="form-label">Mobile phone</label>
+      <input type="number" class="form-control" id="movil" name="movil" maxlength="12">
+  </div>
+  <div class="col-md-4 mb-3">
+    <label for="provincia" class="form-label">State</label>
+    <select class="form-select" id="provincia" name="provincia">
+        <!-- Opciones select van aqui -->
+    </select>
+</div>
+  <div class="col-md-4 mb-3">
+      <label for="ciudad" class="form-label">City</label>
+      <select class="form-select" id="ciudad" name="ciudad"></select>
+  </div>
+</div>
+
+<!--  Quinta fila -->
+ <div class="row mb-3">
+  <div class="col-md-8 mb-3">
+      <label for="calle" class="form-label">Street name</label>
+      <input type="text" class="form-control" id="calle"  name="calle">
+  </div>
+  <div class="col-md-4 mb-3">
+      <label for="codigopostal" class="form-label">Postal code</label>
+      <input type="number" class="form-control" id="codigopostal" name="codigopostal" maxlength="5">
+  </div>
+</div>
+
+      </div>
+
+  </form>
+  
+
+<div class="container">
+  <form>
+      <div class="pasajero ps-2 pt-3">
+          <h2 class="pt-3 pb-3"><b>ACCOMMODATION IN FAMILIES</b></h2>
+      </div>
+      
+      <div class="form-section row ps-5 pe-5 pb-5">
+          <div class="col-12">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="mb-3">
+                      <label class="form-label">Do you have friends or family in the program?</label>
+                  </div>
+                  <div class="mb-3">
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="amigosFamiliares" id="amigosFamiliaresSi" value="si">
+                          <label class="form-check-label" for="amigosFamiliaresSi">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="amigosFamiliares" id="amigosFamiliaresNo" value="no">
+                          <label class="form-check-label" for="amigosFamiliaresNo">No</label>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <textarea class="form-control" id="nombresApellidosAmigos" name="nombresApellidosAmigos" rows="3" placeholder="Indicate the names and surnames"></textarea>
+                  </div>
+              </div>
+  
+              <!-- Segunda columna -->
+              <div class="col-md-6 mb-4">
+                  <div class="mb-3">
+                      <label class="form-label">Do you want to stay with your friend or family?</label>
+                  </div>
+                  <div class="mb-3">
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="alojamientoAmigo" id="alojamientoAmigoSi" value="si">
+                          <label class="form-check-label" for="alojamientoAmigoSi">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="alojamientoAmigo" id="alojamientoAmigoNo" value="no">
+                          <label class="form-check-label" for="alojamientoAmigoNo">No</label>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <textarea class="form-control" id="nombresApellidosAlojamiento" name="nombresApellidosAlojamiento" rows="3" placeholder="Indicate the names and surnames"></textarea>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+  </form>
+  
+</div>
+
+
+</div>
+
+<!-- SEGUNDO FORMULARIO FIN -->
+  <br>
+  <br>
+  <br>
+  <div class="container botones-desplazamiento position-relative">
+    <a href="index.html"><button class="btn btn-custom-color-izquierda btn-custom-size bottom-left"><i class="bi bi-caret-left-fill pe-2" style="font-size: 1.4rem;"></i>BACK</button></a>
+    <a href="datos2.html"><button class="btn btn-custom-color-derecha btn-custom-size bottom-right">CONTINUE<i class="bi bi-caret-right-fill ps-3" style="font-size: 1.4rem;"></i></button></a>
+</div>
+<br>
+<br>
+        </div>
+             
+        
+      </div>
+      
+        <!-- pasajero1 -->
+
+    </section>
+
+
+
+
+      <!-- Footer -->
+<footer class="text-center text-lg-start text-muted">
+    
+  
+    
+  
+    <!-- Copyright -->
+    <div class="container-fluid pt-3 pb-3" style="background-color: black;">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <img src="images/VALUA_Travel_horiz_white.png" class="img-fluid" style="width: 208px;height: 44px;" alt="Responsive image">
+              <p>© 2024 Copyright Valua Travel, All Rights Reserved</p>
+          </div>
+      </div>
+  </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    
+    <script>
+      
+
+    /* botones alergia */
+    $(document).ready(function() {
+            $('input[type=radio][name=radio1]').change(function() {
+                if (this.value == 'si') {
+                    $('#extraRows').show();
+                }
+                else if (this.value == 'no') {
+                    $('#extraRows').hide();
+                }
+            });
+        });
+
+        document.getElementById('toastIcon').addEventListener('click', function(event) {
+        event.preventDefault();
+        var toastEl = document.getElementById('liveToast');
+        var toast = new bootstrap.Toast(toastEl);
+        toast.show();
+    });
+        document.getElementById('toastIcon2').addEventListener('click', function(event) {
+        event.preventDefault();
+        var toastEl = document.getElementById('liveToast2');
+        var toast = new bootstrap.Toast(toastEl);
+        toast.show();
+    });
+
+    $(document).ready(function() {
+    $('#notengo').change(function() {
+        if(this.checked) {
+            $('#alertasindocumento').removeClass('d-none');
+        } else {
+            $('#alertasindocumento').addClass('d-none');
+        }
+    });
+});
+
+
+
+    
+
+
+    </script>
+    
+</body>
+</html>

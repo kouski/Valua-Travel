@@ -1402,92 +1402,49 @@ letter-spacing: 0.2px;
 
 
   /*-------------------------------------------*\ 
-  *********PAGINA CONDICIONES3.INICIO************
+  *********PAGA PASAJERO4.INICIO************
   \*-------------------------------------------*/
 
+/*-------------------------------------------*\ 
+  Tabla.inicio
+\*-------------------------------------------*/
   
-/* .main-content {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
-} */
-
-/* .embed-container {
-  max-height: 300px; 
-  overflow-y: scroll;
-  padding-right: 15px; 
-} */
-
-
-/* .consent {
-  margin-top: 20px;
-} */
-/* .consent .form-check-label {
-  display: inline;
-}
-.consent input {
-  margin-right: 10px;
-}
-.btn-download {
-  background-color: var(--color-secundario);
-  color: var(--color-primario);
-  font-family: var(--font-family-title);
-  font-weight: bold;
-  letter-spacing: 0px;
-  font-size: 1rem;
-}
-
-.btn-download:hover{
-  color: var(--color-primario);
-  background-color: var(--color-titulo);
-}
-
-
-@media (max-width: 768px) {
-  .consent {
-      flex-direction: column;
-      align-items: flex-start;
+  .table-responsive {
+    background-color: #F6ECDF;
+    padding: 20px;
   }
-  .btn-download {
-      margin-top: 10px;
-      width: 100%;
+  
+  .table-responsive h2{
+    color: var(--color-secundario);
+    font-family: var(--font-family-title);
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    padding-left: 1.5em;
   }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .btn-download {
-      margin-top: 20px;
-      margin-left: 20px;
-      max-width: 200px;
+  
+  .table thead th {
+    border-bottom: 2px solid #dee2e6;
   }
-}
-
-.titulo-consentimiento{
-  color: var(--background-back-button);
-  display: block;
-  font-family: var(--font-family-title);
-  font-size: 1rem;
-  letter-spacing: 0.18px;
-  margin-top: -25px;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-
-}
-
-.aceptar-terminos{
-  color: var(--color-titulo);
-  font-family: var(--font-family-body);
-  font-size: 0.875rem;
-  letter-spacing: -0.04px;
-  margin: 0;
-  padding: 0;
-
-} */
+  .table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .table td {
+    background-color: var(--color-primario);
+  }
+  .text-danger {
+    color: #d9534f !important;
+  }
+  .table tbody tr + tr {
+    border-top: 10px solid #F6ECDF; /* Adds a gap between rows */
+  }
 
 
-
+/*-------------------------------------------*\ 
+  Tabla.fin
+\*-------------------------------------------*/
 
 
 
@@ -1496,7 +1453,7 @@ letter-spacing: 0.2px;
 
 
 /*-------------------------------------------*\ 
-  *********PAGINA CONDICIONES3.FIN************
+  *********PAGA PASAJERO4.FIN************
 \*-------------------------------------------*/
 
 

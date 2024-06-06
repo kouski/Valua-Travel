@@ -1416,6 +1416,13 @@ letter-spacing: 0.2px;
 
 }
 
+@media only screen and (max-width: 600px) {
+  .texto-inicio-pago{
+    text-align: justify;
+  }
+  
+}
+
 
 
   .table-responsive {

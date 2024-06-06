@@ -1409,6 +1409,15 @@ letter-spacing: 0.2px;
   Tabla.inicio
 \*-------------------------------------------*/
   
+.texto-inicio-pago{
+  font-family: var(--font-family-body);
+  font-size: 1rem;
+  color: var(--background-button);
+
+}
+
+
+
   .table-responsive {
     background-color: #F6ECDF;
     padding: 20px;
@@ -1425,6 +1434,11 @@ letter-spacing: 0.2px;
   
   .table thead th {
     border-bottom: 2px solid #dee2e6;
+    color: var(--color-titulo);
+    font-family: var(--font-family-body);
+    font-weight: bold;
+    font-size: 0.875rem;
+    letter-spacing: -0.07px;
   }
   .table td, .table th {
     vertical-align: middle;
@@ -1433,6 +1447,12 @@ letter-spacing: 0.2px;
   
   .table td {
     background-color: var(--color-primario);
+    color: var(--color-titulo);
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: -0.07px;
+
   }
   .text-danger {
     color: #d9534f !important;
@@ -1500,6 +1520,34 @@ letter-spacing: 0.2px;
 
 /*-------------------------------------------*\ 
   *********PAGA PASAJERO4.FIN************
+\*-------------------------------------------*/
+
+
+
+/*-------------------------------------------*\ 
+  *********SEGUROCANCELACION05.INICIO************
+\*-------------------------------------------*/
+
+.fondo-seguro{
+  background-color: var(--background-titulos-formulario);
+}
+
+#logo-europ{
+  width: 133px;
+  height: 57px;
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------*\ 
+  *********SEGUROCANCELACION05.FIN************
 \*-------------------------------------------*/
 
 

@@ -1572,6 +1572,17 @@ letter-spacing: 0.2px;
   
 }
 
+@media only screen and (max-width: 600px) {
+  .precio-fondo{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto !important; /* O el valor que prefieras */
+  }
+
+}
+
 .gastos-anulacion h2{
   font-family: var(--font-family-body);
   font-size: 1rem;

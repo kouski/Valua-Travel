@@ -1445,11 +1445,57 @@ letter-spacing: 0.2px;
 /*-------------------------------------------*\ 
   Tabla.fin
 \*-------------------------------------------*/
+/*-------------------------------------------*\ 
+  Pasarela pago.inicio
+\*-------------------------------------------*/
 
 
+.payment-rectangle {
+  position: relative;
+  max-width: 453px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.logo {
+  position: absolute;
+  top: -5px;
+  left: -120px;
+  max-width: 100px;
+}
+.btn-custom {
+  width: 100%;
+  background-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+.card-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
 
 
+@media only screen and (max-width: 600px) {
+  .payment-rectangle {
+    margin-top: 0;
+}
+.logo {
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    max-width: 100px;
+    margin: 0;
+}
+}
 
+
+/*-------------------------------------------*\ 
+  Pasarela pago.fin
+\*-------------------------------------------*/
 
 
 /*-------------------------------------------*\ 

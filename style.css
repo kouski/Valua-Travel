@@ -1644,7 +1644,9 @@ letter-spacing: 0.2px;
   font-size: 1.125rem;
 }
 
-
+#texto-final {
+  line-height: 0.1; /* Ajusta este valor según tus necesidades */
+}
 
 
 

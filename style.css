@@ -1661,7 +1661,20 @@ letter-spacing: 0.2px;
 }
 
 
+/* Media query for small screens */
+@media (max-width: 767px) {
+  h2, p {
+    font-size: 1rem;
+  }
 
+  .precio-fondo {
+    width: 100%;
+  }
+
+  .container.gastos-anulacion .row > div {
+    border-right: none;
+  }
+}
 
 
 

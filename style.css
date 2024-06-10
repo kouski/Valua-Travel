@@ -1682,6 +1682,10 @@ letter-spacing: 0.2px;
   .container.gastos-anulacion .row > div {
     border-right: none;
   }
+
+  .borde-derecho {
+    border-right: none !important;
+  }
 }
 
 /* Media query for tablets (min-width: 768px) and desktops */

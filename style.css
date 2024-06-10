@@ -1569,6 +1569,7 @@ letter-spacing: 0.2px;
   font-weight: 400;
   font-size: 1.375rem;
   letter-spacing: -0.11px;
+  width: 200px;
   
 }
 
@@ -1578,14 +1579,14 @@ letter-spacing: 0.2px;
     padding-right: 0;
     margin-left: 0;
     margin-right: 0;
-    width: auto !important; 
+    width: 150px; 
   }
 
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .precio-fondo {
-    width: auto !important; 
+    width: 150px !important; 
   }
 }
 
@@ -1675,10 +1676,6 @@ letter-spacing: 0.2px;
     font-size: 1rem;
   }
 
-  .precio-fondo {
-    width: 100%;
-  }
-
   .container.gastos-anulacion .row > div {
     border-right: none;
   }
@@ -1692,7 +1689,7 @@ letter-spacing: 0.2px;
 @media (min-width: 768px) {
   .precio-fondo {
     margin-left: 4rem; 
-    margin-right: 4rem; 
+    margin-right: 4rem;
   }
 }
 

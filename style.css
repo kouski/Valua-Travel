@@ -1634,7 +1634,7 @@ letter-spacing: 0.2px;
   font-size: 1.8rem;
 }
 
-/* .texto-final{
+ .texto-final{
   font-family: var(--font-family-body);
   font-size: 0.688rem;
   color: var(--background-back-button);
@@ -1644,15 +1644,15 @@ letter-spacing: 0.2px;
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
-} */
+} 
 
-#texto-final{
+/* #texto-final{
   font-family: var(--font-family-body);
   font-size: 0.688rem;
   color: var(--background-back-button);
   letter-spacing: 0px;
   line-height: 1.0;
-}
+} */
 
 #ganas{
   font-size: 1.125rem;
@@ -1681,6 +1681,14 @@ letter-spacing: 0.2px;
 
   .container.gastos-anulacion .row > div {
     border-right: none;
+  }
+}
+
+/* Media query for tablets (min-width: 768px) and desktops */
+@media (min-width: 768px) {
+  .precio-fondo {
+    margin-left: 4rem; 
+    margin-right: 4rem; 
   }
 }
 

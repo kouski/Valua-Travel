@@ -1705,8 +1705,71 @@ letter-spacing: 0.2px;
 \*-------------------------------------------*/
 
 
+/*-------------------------------------------*\ 
+  *********CONFIRMACIONINSCRIPCION6.INICIO*****
+\*-------------------------------------------*/
+
+.left-panel {
+  background-color: var(--background-titulos-formulario); /* Color de fondo similar al de la imagen */
+}
+
+.right-panel {
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+.descarga-item {
+  padding: 10px 0;
+}
 
 
+.btn-doc{
+  width: 170px;
+}
+
+.btn-download i {
+  padding-left: 10px;
+}
+
+
+hr {
+  margin: 0;
+  border-top: 1px solid #c5c4c4;
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+  .descarga-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-doc {
+    margin-top: 10px;
+    width: 40%;
+  }
+}
+
+/* Ajustes para tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btn-doc {
+    width: 130px; 
+  }
+}
+
+/* Ajustes para pantallas más grandes */
+@media (min-width: 1025px) {
+  .btn-doc {
+    width: 170px; /* Ajuste específico para pantallas grandes */
+  }
+}
+
+
+
+
+/*-------------------------------------------*\ 
+  *********CONFIRMACIONINSCRIPCION6.FIN*****
+\*-------------------------------------------*/
 
 
 

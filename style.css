@@ -1114,6 +1114,10 @@ letter-spacing: 0.2px;
 
 }
 
+.icono-btn{
+  margin-right: 0 !important;
+}
+
 @media (max-width: 576px) {
   .btn-custom-size {
       width: 140px; 

@@ -1855,6 +1855,13 @@ label.acepto-condiciones span {
   }
 }
 
+#miCheckbox{
+  margin-top: -1.1em;
+}
+#validar-datos{
+  padding-left: 0;
+}
+
 
 
 

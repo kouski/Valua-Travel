@@ -963,7 +963,7 @@ Pasajero.inicio
 
 .avisos{
   background-color: var(--background-aviso);
-  padding: 4em 4em;
+  padding: 1em 4em;
   margin-bottom: 1em;
 }
 
@@ -987,6 +987,7 @@ Pasajero.inicio
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: -0.07px;
+  margin-bottom: 0 !important;
 }
 
 .avisos a {

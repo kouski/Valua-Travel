@@ -1863,6 +1863,20 @@ label.acepto-condiciones span {
   padding-left: 0;
 }
 
+/*-------------------------------------------*\ 
+  *********PAGINA INFORMACIÓN PAGO************
+\*-------------------------------------------*/
+
+.pago-correcto {
+  text-align: center;
+  color: rgb(66, 66, 66);
+  font-weight: bold;
+  font-family: var(--font-family-body);
+  font-size: 1.2rem;
+  padding-top: 3em;
+  margin-bottom: 6em;
+  
+}
 
 
 
@@ -1877,6 +1891,11 @@ label.acepto-condiciones span {
 
 
 
+
+
+/*-------------------------------------------*\ 
+  *********PAGINA INFORMACIÓN PAGO************
+\*-------------------------------------------*/
 
 
 

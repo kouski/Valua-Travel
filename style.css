@@ -1869,7 +1869,7 @@ label.acepto-condiciones span {
 
 .pago-correcto {
   text-align: center;
-  color: rgb(66, 66, 66);
+  color: var(--color-texto);
   font-weight: bold;
   font-family: var(--font-family-body);
   font-size: 1.2rem;

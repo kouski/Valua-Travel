@@ -759,10 +759,7 @@ Pasajero.inicio
 }
 
 .form-check-input {
-
-  border: 2px solid var(--color-secundario);
-  width: 1.1em;
-  height: 1.1em;
+  border: 2px solid var(--background-button);
 }  
 
 .form-check-input:checked {

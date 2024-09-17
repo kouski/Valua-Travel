@@ -758,6 +758,13 @@ Pasajero.inicio
   background-color: var(--background-pasajero);
 }
 
+.form-check-input {
+
+  border: 2px solid var(--color-secundario);
+  width: 1.1em;
+  height: 1.1em;
+}  
+
 .form-check-input:checked {
   background-color: var(--color-secundario);
   border-color: var(--color-secundario);
